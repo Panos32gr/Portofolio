@@ -9,24 +9,37 @@
 </head>
 
 <body>
-  <div class="sidenav">
+  <div class="bg-image">
+    <img src="6192206.jpg" alt="6192206.jpg">
+  </div>
+
+  <div class="pinfo">
+    <p>Hello, my name is Panagiotis Angis.
+    </p>
+    <p>Junior software developer based in Kavala, Greece.</p>
+  </div>
+
+  <div class="extrainfo">
+  <p>Studying Computer Science, Interested in developing the skills necessary for a carreer in Fullstack development.</p>
+</div>
+
+  <div id="main">
+    <button class="openbtn" onclick="openNav()">&#9776; Open Menu</button>
+  </div>
+  <div id="sidenav"class="sidenav">
+    <h2>Panagiotis Angis </h2>
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
     <a href="credentials.html">Resume</a>
     <a href="Aboutme.html">About me</a>
     <a href="projects.html">Projects</a>
     <div class="header">
       <img src="sketch_97262924.jpg" alt="sketch_97262924.jpg">
-      <a href="#default" class="logo">Angis panagiotis</a>
     </div>
   </div>
-  </div>
-  <div class="card">
-    <div class="card-info">
-      <p class="title">Credentials</p>
-    </div>
-  </div>
+
   <ul class="example-2">
     <li class="icon-content">
-      <a href="https://linkedin.com/" aria-label="LinkedIn" data-social="linkedin">
+      <a href="https://www.linkedin.com/in/%CE%B1%CE%B3%CE%B3%CE%B7%CF%82-%CF%80%CE%B1%CE%BD%CE%B1%CE%B3%CE%B9%CF%89%CF%84%CE%B7%CF%82-b97a82274/" aria-label="LinkedIn" data-social="linkedin">
         <div class="filled"></div>
         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-linkedin"
           viewBox="0 0 16 16" xml:space="preserve">
@@ -38,7 +51,7 @@
       <div class="tooltip">LinkedIn</div>
     </li>
     <li class="icon-content">
-      <a href="https://www.linkedin.com/in/%CE%B1%CE%B3%CE%B3%CE%B7%CF%82-%CF%80%CE%B1%CE%BD%CE%B1%CE%B3%CE%B9%CF%89%CF%84%CE%B7%CF%82-b97a82274/"
+      <a href="https://github.com/Panos32gr"
         aria-label="GitHub" data-social="github">
         <div class="filled"></div>
         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-github"
@@ -79,7 +92,18 @@
       <div class="tooltip">facebook</div>
     </li>
   </ul>
-
+<script>
+  function openNav() {
+    document.getElementById("sidenav").style.width = "250px";
+    document.getElementById("main").style.marginLeft = "250px";
+  }
+  
+  /* Set the width of the sidebar to 0 and the left margin of the page content to 0 */
+  function closeNav() {
+    document.getElementById("sidenav").style.width = "0";
+    document.getElementById("main").style.marginLeft = "0";
+  }
+</script>
 </body>
 
 </html>
