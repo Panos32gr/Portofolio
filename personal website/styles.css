@@ -4,7 +4,7 @@
   border: none;
   top: 0;
   left: 0;
-  z-index: 1;
+  z-index: -2;
   margin: 0;
   padding: 0;
   background-position: center;
@@ -14,10 +14,16 @@
   position: fixed;
 }
 
+.header-image{
+  display:inline-block;
+  flex-direction: column;
+  align-items: center;
+}
 
 .pinfo{
   z-index: 1;
   color: #fa8500;
+  top: 40%;
   left: 16%;
   position: fixed;
   font-size: 30px;
@@ -28,7 +34,8 @@
   z-index: 1;
   color: #fa8500;
   left: 16%;
-  top: 15%;
+  right: 50%;
+  top: 50%;
   position: fixed;
   font-size: 30px;
 }
