@@ -1,12 +1,13 @@
-.bg-image{
+.bg-image {
   width: 100%;
   height: 100%;
-  border: none;
+  border: black;
   top: 0;
   left: 0;
   z-index: -2;
   margin: 0;
   padding: 0;
+  border-color: #000;
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -14,11 +15,9 @@
   position: fixed;
 }
 
-.bannerimg{
 
-}
 
-.pinfo{
+.pinfo {
   z-index: 1;
   color: #fa8500;
   top: 40%;
@@ -28,7 +27,7 @@
   font-weight: bold;
 }
 
-.extrainfo{
+.extrainfo {
   z-index: 1;
   color: #fa8500;
   left: 35%;
@@ -52,7 +51,7 @@
 
 
 
-.sidenav h2{
+.sidenav h2 {
   font-family: "Allura";
   left: 5%;
   font-size: 28px;
@@ -82,7 +81,7 @@
 }
 
 
-.header img{
+.header img {
   position: absolute;
   top: 10%;
   display: block;
@@ -93,7 +92,7 @@
   padding: 5px;
   width: 200px;
   height: 200px;
-  
+
 }
 
 .openbtn {
@@ -121,7 +120,8 @@
 
 /* Style page content - use this if you want to push the page content to the right when you open the side navigation */
 #main {
-  transition: margin-left .5s; /* If you want a transition effect */
+  transition: margin-left .5s;
+  /* If you want a transition effect */
   padding: 20px;
 }
 
@@ -131,12 +131,16 @@
     display: block;
     text-align: left;
   }
+
   .header-right {
     float: none;
   }
 }
 
-
+.cards {
+  flex-direction: row;
+  display: inline-flex;
+}
 
 .card {
   --background: linear-gradient(to left, #f7ba2b 0%, #ea5358 100%);
@@ -150,9 +154,9 @@
   position: relative;
   left: 70%;
   z-index: 1;
- }
- 
- .card::after {
+}
+
+.card::after {
   position: absolute;
   content: "";
   top: 30px;
@@ -166,9 +170,9 @@
   background: #f7ba2b;
   background: var(--background);
   transition: opacity .5s;
- }
- 
- .card-info {
+}
+
+.card-info {
   --color: #181818;
   background: var(--color);
   color: var(--color);
@@ -179,27 +183,27 @@
   height: 100%;
   overflow: visible;
   border-radius: .7rem;
- }
- 
- .card .title {
+}
+
+.card .title {
   font-weight: bold;
   letter-spacing: .1em;
- }
- 
+}
 
- .card:hover::after {
+
+.card:hover::after {
   opacity: 0;
- }
- 
- .card:hover .card-info {
+}
+
+.card:hover .card-info {
   color: #f7ba2b;
   transition: color 1s;
- }
+}
 
 
- ul {
+ul {
   list-style: none;
-  
+
 }
 
 .example-2 {
@@ -211,10 +215,12 @@
   align-items: center;
   z-index: 1;
 }
+
 .example-2 .icon-content {
   margin: 0 10px;
   position: relative;
 }
+
 .example-2 .icon-content .tooltip {
   position: absolute;
   top: -30px;
@@ -228,11 +234,13 @@
   font-size: 14px;
   transition: all 0.3s ease;
 }
+
 .example-2 .icon-content:hover .tooltip {
   opacity: 1;
   visibility: visible;
   top: -50px;
 }
+
 .example-2 .icon-content a {
   position: relative;
   overflow: hidden;
@@ -246,18 +254,22 @@
   background-color: #fff;
   transition: all 0.3s ease-in-out;
 }
+
 .example-2 .icon-content a:hover {
   box-shadow: 3px 2px 45px 0px rgb(0 0 0 / 12%);
 }
+
 .example-2 .icon-content a svg {
   position: relative;
   z-index: 1;
   width: 30px;
   height: 30px;
 }
+
 .example-2 .icon-content a:hover {
   color: white;
 }
+
 .example-2 .icon-content a .filled {
   position: absolute;
   top: auto;
@@ -268,32 +280,33 @@
   background-color: #000;
   transition: all 0.3s ease-in-out;
 }
+
 .example-2 .icon-content a:hover .filled {
   height: 100%;
 }
 
 .example-2 .icon-content a[data-social="linkedin"] .filled,
-.example-2 .icon-content a[data-social="linkedin"] ~ .tooltip {
+.example-2 .icon-content a[data-social="linkedin"]~.tooltip {
   background-color: #0274b3;
 }
 
 .example-2 .icon-content a[data-social="github"] .filled,
-.example-2 .icon-content a[data-social="github"] ~ .tooltip {
+.example-2 .icon-content a[data-social="github"]~.tooltip {
   background-color: #24262a;
 }
+
 .example-2 .icon-content a[data-social="instagram"] .filled,
-.example-2 .icon-content a[data-social="instagram"] ~ .tooltip {
-  background: linear-gradient(
-    45deg,
-    #405de6,
-    #5b51db,
-    #b33ab4,
-    #c135b4,
-    #e1306c,
-    #fd1f1f
-  );
+.example-2 .icon-content a[data-social="instagram"]~.tooltip {
+  background: linear-gradient(45deg,
+      #405de6,
+      #5b51db,
+      #b33ab4,
+      #c135b4,
+      #e1306c,
+      #fd1f1f);
 }
+
 .example-2 .icon-content a[data-social="facebook"] .filled,
-.example-2 .icon-content a[data-social="facebook"] ~ .tooltip {
+.example-2 .icon-content a[data-social="facebook"]~.tooltip {
   background-color: #0274b3;
 }
