@@ -16,11 +16,10 @@
 }
 
 
-
 .pinfo {
   z-index: 1;
   color: #fa8500;
-  top: 40%;
+  top: 20%;
   left: 35%;
   position: fixed;
   font-size: 30px;
@@ -32,7 +31,7 @@
   color: #fa8500;
   left: 35%;
   right: 35%;
-  top: 50%;
+  top: 30%;
   position: fixed;
   font-size: 30px;
 }
@@ -137,13 +136,17 @@
   }
 }
 
-.cards {
-  flex-direction: row;
-  display: inline-flex;
+.cards{
+  position: fixed;
+  bottom: 10%;
+  left: 25%;
 }
 
 .card {
   --background: linear-gradient(to left, #f7ba2b 0%, #ea5358 100%);
+  display: inline-block;
+  margin: 50px;
+  top: 10%;
   width: 190px;
   height: 254px;
   padding: 5px;
@@ -152,11 +155,10 @@
   background: #f7ba2b;
   background: var(--background);
   position: relative;
-  left: 70%;
   z-index: 1;
-}
-
-.card::after {
+ }
+ 
+ .card::after {
   position: absolute;
   content: "";
   top: 30px;
@@ -170,9 +172,9 @@
   background: #f7ba2b;
   background: var(--background);
   transition: opacity .5s;
-}
-
-.card-info {
+ }
+ 
+ .card-info {
   --color: #181818;
   background: var(--color);
   color: var(--color);
@@ -183,22 +185,23 @@
   height: 100%;
   overflow: visible;
   border-radius: .7rem;
-}
-
-.card .title {
+ }
+ 
+ .card .title {
   font-weight: bold;
   letter-spacing: .1em;
-}
-
-
-.card:hover::after {
+ }
+ 
+ /*Hover*/
+ .card:hover::after {
   opacity: 0;
-}
-
-.card:hover .card-info {
+ }
+ 
+ .card:hover .card-info {
   color: #f7ba2b;
   transition: color 1s;
-}
+ }
+ 
 
 
 ul {
