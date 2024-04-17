@@ -5,7 +5,7 @@
 }
 
 html, body{
-  overflow-y: scroll;
+  overflow-y: auto;
   overflow-x: hidden;
 }
 
@@ -83,7 +83,7 @@ body{
 }
 
 .extrainfo2 p {
-  font-family: "Mansalva", sans-serif;
+  
   z-index: 1;
   color:  #fa8500;
   left: 35%;
