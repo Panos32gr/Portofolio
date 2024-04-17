@@ -1,33 +1,20 @@
-/* width */
-body::-webkit-scrollbar {
-  width: 10px;
-}
-
-/* Track */
-body::-webkit-scrollbar-track {
-  background: #f1f1f1;
-}
-
-/* Handle */
-body::-webkit-scrollbar-thumb {
-  background: #888;
-}
-
-/* Handle on hover */
-body::-webkit-scrollbar-thumb:hover {
-  background: #555;
-}
-
 .mansalva-regular {
   font-family: "Mansalva", sans-serif;
   font-weight: 400;
   font-style: normal;
 }
 
-
-.bg-image {
+html, body{
   overflow-y: scroll;
   overflow-x: hidden;
+}
+
+
+body{
+  background-color: #000;
+}
+
+.bg-image {
   width: 100%;
   height: 100%;
   border: black;
@@ -40,21 +27,37 @@ body::-webkit-scrollbar-thumb:hover {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  background-attachment: fixed;
-  position: fixed;
+  background-attachment: scroll;
+  position: absolute;
 }
 
 .logo img {
   position: absolute;
   top: 20%;
-  left: 20%;
+  left: 16%;
   width: 100%;
   height: 100%;
   padding: 5px;
-  width: 210px;
+  width: 230px;
   height: 210px;
 }
 
+.moneymaker img{
+  --background: linear-gradient(to left, #f7ba2b 0%, #ea5358 100%);
+  display: inline-block;
+  margin: 50px;
+  position: absolute;
+  top: 15%;
+  right: 10%;
+  padding: 5px;
+  width: 270px;
+  height: 280px;
+  border-radius: 1rem;
+  overflow: visible;
+  background: #f7ba2b;
+  background: var(--background);
+  z-index: 1;
+}
 
 
 .pinfo {
@@ -63,7 +66,7 @@ body::-webkit-scrollbar-thumb:hover {
   color: #fa8500;
   top: 20%;
   left: 35%;
-  position: fixed;
+  position: absolute;
   font-size: 30px;
   font-weight: bold;
 }
@@ -75,7 +78,18 @@ body::-webkit-scrollbar-thumb:hover {
   left: 35%;
   right: 35%;
   top: 31%;
-  position: fixed;
+  position: absolute;
+  font-size: 30px;
+}
+
+.extrainfo2 p {
+  font-family: "Mansalva", sans-serif;
+  z-index: 1;
+  color:  #fa8500;
+  left: 35%;
+  right: 35%;
+  top: 1350px;
+  position: absolute;
   font-size: 30px;
 }
 
@@ -123,22 +137,20 @@ body::-webkit-scrollbar-thumb:hover {
 }
 
 
-.header img {
+.sidenavlogo img {
   position: absolute;
   top: 10%;
   display: block;
   width: 50%;
   height: 50%;
-  border: 1px solid #ddd;
-  border-radius: 50%;
   padding: 5px;
-  width: 200px;
-  height: 200px;
+  width: 240px;
+  height: 240px;
 
 }
 
 .openbtn {
-  position: relative;
+  position: fixed;
   z-index: 1;
   font-size: 20px;
   cursor: pointer;
@@ -180,8 +192,8 @@ body::-webkit-scrollbar-thumb:hover {
 }
 
 .cards {
-  position: fixed;
-  bottom: 10%;
+  position: absolute;
+  top: 700px;
   left: 25%;
 }
 
@@ -199,6 +211,7 @@ body::-webkit-scrollbar-thumb:hover {
   background: var(--background);
   position: relative;
   z-index: 1;
+
 }
 
 .card::after {
