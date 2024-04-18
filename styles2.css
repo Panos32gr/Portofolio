@@ -59,14 +59,12 @@
 }
 
 
-.header img {
+.sidenavlogo img {
     position: absolute;
     top: 10%;
     display: block;
     width: 50%;
     height: 50%;
-    border: 1px solid #ddd;
-    border-radius: 50%;
     padding: 5px;
     width: 200px;
     height: 200px;

@@ -170,6 +170,7 @@ body{
   right: 25px;
   font-size: 36px;
   margin-left: 50px;
+  font-size: 20px;
 }
 
 /* Style page content - use this if you want to push the page content to the right when you open the side navigation */
@@ -177,10 +178,11 @@ body{
   transition: margin-left .5s;
   /* If you want a transition effect */
   padding: 20px;
+  font-size: 15px;
 }
 
 @media screen and (max-width: 500px) {
-  .header a {
+  .sidenav a {
     float: none;
     display: block;
     text-align: left;
