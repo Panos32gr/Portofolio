@@ -33,10 +33,10 @@ body{
 .logo img {
   position: absolute;
   top: 100px;
-  left: 700px;
+  left: 750px;
   padding: 5px;
-  width: 300px;
-  height: 250px;
+  width: 250px;
+  height: 200px;
 }
 
 
@@ -141,26 +141,22 @@ body{
 
 ul {
   list-style: none;
-
 }
-/* list of buttons needs adjustment */
 
 .util{
-  
+  position: absolute;
+  display: flex;
+  z-index: 1;
+  top: 500px;
+  left: 550px;
 }
 
-.guidecontainer{
-  list-style: none;
-  display: inline-block;
-  z-index: 1;
-  margin-right: 20%;
-  top: 800px;
-  left: 300px;
-}
+
 
 .guidance{
+ display: inline-block;
+ margin: 20px;
  z-index: 1;
- position: absolute;
  border-radius: 999px;
  padding: 1em 2em;
  background: linear-gradient(117deg, #fa8500, rgb(255, 195, 116));
@@ -181,7 +177,7 @@ button:focus {
  box-shadow: 0 0.1rem 0.8rem rgb(254, 100, 70);
 }
 
-.example-2 {
+.iconcontainer {
   display: flex;
   position: fixed;
   bottom: 0;
@@ -191,12 +187,12 @@ button:focus {
   z-index: 1;
 }
 
-.example-2 .icon-content {
+.iconcontainer .icon-content {
   margin: 0 10px;
   position: relative;
 }
 
-.example-2 .icon-content .tooltip {
+.iconcontainer .icon-content .tooltip {
   position: absolute;
   top: -30px;
   left: 50%;
@@ -210,13 +206,13 @@ button:focus {
   transition: all 0.3s ease;
 }
 
-.example-2 .icon-content:hover .tooltip {
+.iconcontainer .icon-content:hover .tooltip {
   opacity: 1;
   visibility: visible;
   top: -50px;
 }
 
-.example-2 .icon-content a {
+.iconcontainer .icon-content a {
   position: relative;
   overflow: hidden;
   display: flex;
@@ -230,22 +226,22 @@ button:focus {
   transition: all 0.3s ease-in-out;
 }
 
-.example-2 .icon-content a:hover {
+.iconcontainer .icon-content a:hover {
   box-shadow: 3px 2px 45px 0px rgb(0 0 0 / 12%);
 }
 
-.example-2 .icon-content a svg {
+.iconcontainer .icon-content a svg {
   position: relative;
   z-index: 1;
   width: 30px;
   height: 30px;
 }
 
-.example-2 .icon-content a:hover {
+.iconcontainer .icon-content a:hover {
   color: white;
 }
 
-.example-2 .icon-content a .filled {
+.iconcontainer .icon-content a .filled {
   position: absolute;
   top: auto;
   bottom: 0;
@@ -256,22 +252,22 @@ button:focus {
   transition: all 0.3s ease-in-out;
 }
 
-.example-2 .icon-content a:hover .filled {
+.iconcontainer .icon-content a:hover .filled {
   height: 100%;
 }
 
-.example-2 .icon-content a[data-social="linkedin"] .filled,
-.example-2 .icon-content a[data-social="linkedin"]~.tooltip {
+.iconcontainer .icon-content a[data-social="linkedin"] .filled,
+.iconcontainer .icon-content a[data-social="linkedin"]~.tooltip {
   background-color: #0274b3;
 }
 
-.example-2 .icon-content a[data-social="github"] .filled,
-.example-2 .icon-content a[data-social="github"]~.tooltip {
+.iconcontainer .icon-content a[data-social="github"] .filled,
+.iconcontainer .icon-content a[data-social="github"]~.tooltip {
   background-color: #24262a;
 }
 
-.example-2 .icon-content a[data-social="instagram"] .filled,
-.example-2 .icon-content a[data-social="instagram"]~.tooltip {
+.iconcontainer .icon-content a[data-social="instagram"] .filled,
+.iconcontainer .icon-content a[data-social="instagram"]~.tooltip {
   background: linear-gradient(45deg,
       #405de6,
       #5b51db,
@@ -281,8 +277,8 @@ button:focus {
       #fd1f1f);
 }
 
-.example-2 .icon-content a[data-social="facebook"] .filled,
-.example-2 .icon-content a[data-social="facebook"]~.tooltip {
+.iconcontainer .icon-content a[data-social="facebook"] .filled,
+.iconcontainer .icon-content a[data-social="facebook"]~.tooltip {
   background-color: #0274b3;
 }
 
@@ -349,7 +345,7 @@ button:focus {
   background: transparent;
   opacity: 0.9;
   border: 2px solid;
-  border-image: linear-gradient(to right, #fa8500, rgb(295, 115, 116/ 12%)) 1;
+  border-image: linear-gradient(to right, 117deg, #fa8500, rgb(255, 195, 116)) 1;
   box-shadow: 0 0 100px rgba(245, 8, 8, 0.8);
 }
 
