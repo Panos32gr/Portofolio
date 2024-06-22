@@ -14,6 +14,21 @@
     position: fixed;
 }
 
+.moneymaker img {
+    --background: linear-gradient(to left, #f7ba2b 0%, #ea5358 100%);
+    position: absolute;
+    top: 100px;
+    right: 750px;
+    padding: 5px;
+    width: 350px;
+    height: 310px;
+    border-radius: 10px;
+    background: #f7ba2b;
+    background: var(--background);
+    white-space: nowrap;
+}
+
+
 
 .sidenav {
     height: 100%;
@@ -27,7 +42,16 @@
     transition: 0.5s;
 }
 
-
+.creds {
+    font-family: "Mansalva", sans-serif;
+    z-index: 1;
+    color: #fa8500;
+    top: 430px;
+    left: 400px;
+    position: absolute;
+    font-size: 30px;
+    font-weight: bold;
+}
 
 .sidenav h2 {
     font-family: "Allura";
@@ -94,10 +118,8 @@
     margin-left: 50px;
 }
 
-/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
 #main {
     transition: margin-left .5s;
-    /* If you want a transition effect */
     padding: 20px;
 }
 
