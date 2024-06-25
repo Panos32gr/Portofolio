@@ -1,5 +1,5 @@
 .mansalva-regular {
-  font-family: "Mansalva", sans-serif;
+  font-family: "Helvetica";
   font-weight: 400;
   font-style: normal;
 }
@@ -41,7 +41,7 @@ body{
 
 
 .pinfo {
-  font-family: "Mansalva", sans-serif;
+  font-family: "Helvetica";
   z-index: 1;
   color: #fa8500;
   top: 350px;
@@ -68,9 +68,9 @@ body{
 
 
 .sidenav h2 {
-  font-family: "Allura";
+  font-family: "Helvetica";
   left: 5%;
-  font-size: 28px;
+  font-size: 20px;
 }
 
 
@@ -78,7 +78,7 @@ body{
   color: rgb(0, 0, 0);
   padding: 16px;
   font-size: 30px;
-  font-family: "Allura";
+  font-family: "Helvetica";
   display: block;
   position: relative;
   top: 300px;
@@ -86,7 +86,7 @@ body{
 
 
 .sidenav a:hover {
-  background-color: #000000;
+  background-color:#000;
   color: #fa8500;
 }
 
@@ -149,6 +149,9 @@ ul {
   z-index: 1;
   top: 500px;
   left: 550px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #000;
+  font-style: normal;
 }
 
 
@@ -161,7 +164,7 @@ ul {
  padding: 1em 2em;
  background: linear-gradient(117deg, #fa8500, rgb(255, 195, 116));
  border: none;
- color: rgb(255, 255, 255);
+ color:  #000;
  font-size: 1rem;
  text-transform: uppercase;
  font-family: inherit;
@@ -173,7 +176,7 @@ ul {
 
 button:hover,
 button:focus {
- background: linear-gradient(117deg, #fa8500, rgb(255, 195, 116));
+ background: linear-gradient(117deg, #fa8500, rgb(252, 193, 0));
  box-shadow: 0 0.1rem 0.8rem rgb(254, 100, 70);
 }
 
@@ -345,8 +348,8 @@ button:focus {
   background: transparent;
   opacity: 0.9;
   border: 2px solid;
-  border-image: linear-gradient(to right, 117deg, #fa8500, rgb(255, 195, 116)) 1;
-  box-shadow: 0 0 100px rgba(245, 8, 8, 0.8);
+  border-image: linear-gradient(to right, 117deg, #fa8500, rgb(253, 202, 136)) 1;
+  box-shadow: 0 0 100px rgba(255, 125, 4, 0.8);
 }
 
 .front {

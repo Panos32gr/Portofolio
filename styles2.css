@@ -17,11 +17,11 @@
 .moneymaker img {
     --background: linear-gradient(to left, #f7ba2b 0%, #ea5358 100%);
     position: absolute;
-    top: 100px;
-    right: 750px;
+    top: 240px;
+    left: 180px;
     padding: 5px;
-    width: 350px;
-    height: 310px;
+    width: 280px;
+    height: 260px;
     border-radius: 10px;
     background: #f7ba2b;
     background: var(--background);
@@ -46,10 +46,10 @@
     font-family: "Mansalva", sans-serif;
     z-index: 1;
     color: #fa8500;
-    top: 430px;
-    left: 400px;
+    top: 200px;
+    left: 500px;
     position: absolute;
-    font-size: 30px;
+    font-size: 25px;
     font-weight: bold;
 }
 
@@ -252,9 +252,9 @@ ul {
 
 .ucnotice{
     color: #fa8500;
-    font-size: 30px;
+    font-size: 50px;
     font-family: "Mansalva", sans-serif;
-    font-weight: 400;
+    font-weight: bold;
     font-style: normal;
     position: absolute;
     top: 400px;
