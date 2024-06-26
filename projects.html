@@ -12,22 +12,24 @@
           <img src="6192206.jpg" alt="6192206.jpg">
         </div>
       
-    
-    <div id="main">
-        <button class="openbtn" onclick="openNav()">&#9776; Menu</button>
-      </div>
-      <div id="sidenav"class="sidenav">
-        <h2>Panagiotis Angis </h2>
-        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-        <a href="index.html">Home</a>
-        <a href="credentials.html">Resume</a>
-        <a href="contactme.html">Contact Me</a>
-        <a href="projects.html">Projects</a>
-        <div class="sidenavlogo">
-          <img src="logo black text.png" alt="logo black text.png">
+
+        <div class="homelogo">
+          <a href="index.html"><img id="hmbtn" src="logo no text orange 2.png" alt="logo no text orange 2.png"></a>
         </div>
-      </div>
-  
+      
+    
+        <button id = 'menu' class= "openbtn" onclick="toggleMenu()">Menu</button>\
+        <div id="sidenav" class="sidenav">
+          <h2>Panagiotis Angis </h2>
+          <a href="index.html">Home</a>
+          <a href="credentials.html">Resume</a>
+          <a href="contactme.html">Contact Me</a>
+          <a href="projects.html">Projects</a>
+          <div class="sidenavlogo">
+            <img src="logo black text.png" alt="logo black text.png">
+          </div>
+        </div>
+      
 
   <div class="ucnotice">
     <p>
@@ -226,17 +228,6 @@
         </li>
       </ul>
 
-      <script>
-        function openNav() {
-          document.getElementById("sidenav").style.width = "250px";
-          document.getElementById("main").style.marginLeft = "250px";
-        }
-        
-        /* Set the width of the sidebar to 0 and the left margin of the page content to 0 */
-        function closeNav() {
-          document.getElementById("sidenav").style.width = "0";
-          document.getElementById("main").style.marginLeft = "0";
-        }
-      </script>
+      <script src="script.js"></script>
 </body>
 </html>
