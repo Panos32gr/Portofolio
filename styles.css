@@ -1,5 +1,5 @@
 .mansalva-regular {
-  font-family: "Helvetica";
+  font-family: "Mansalva";
   font-weight: 400;
   font-style: normal;
 }
@@ -32,11 +32,11 @@ body{
 
 .logo img {
   position: absolute;
-  top: 100px;
-  left: 800px;
+  top: 10%;
+  left: 40%;
   padding: 5px;
-  width: 250px;
-  height: 200px;
+  width: 13%;
+  height: 20%;
 }
 
 .homelogo img {
@@ -49,13 +49,13 @@ body{
 }
 
 .pinfo {
-  font-family: "Helvetica";
+  font-family: "Mansalva";
   z-index: 1;
   color: #fa8500;
-  top: 350px;
-  left: 650px;
+  top: 35%;;
+  left: 35%;
   position: absolute;
-  font-size: 30px;
+  font-size: 200%;
   font-weight: bold;
 }
 
@@ -69,11 +69,11 @@ body{
   left: 0;
   background-color: #fa8500;
   overflow-x: hidden;
-  transition: 0.5s; /* Smooth transition */
+  transition: 0.5s; 
 }
 
 .sidenav h2 {
-  font-family: "Helvetica";
+  font-family: "Mansalva";
   left: 5%;
   font-size: 20px;
 }
@@ -118,8 +118,8 @@ body{
   color: rgb(0, 0, 0);
   padding: 10px 15px;
   border: none;
-  left: 10px;
-  top: 18px;
+  left: 1%;
+  top: 1.8%;
   transition: 0.5s;
 }
 
@@ -128,7 +128,7 @@ body{
 }
 
 .sidenav.open {
-  width: 250px; /* Set the width when open */
+  width: 250px; 
 }
 
 ul {
@@ -136,7 +136,6 @@ ul {
 }
 
 .util{
-  text-decoration: none;
   list-style: none;
   position: absolute;
   display: flex;
@@ -158,11 +157,16 @@ ul {
  background: linear-gradient(117deg, #fa8500, rgb(255, 195, 116));
  border: none;
  color:  #000;
- text-transform: uppercase;
- font-family: Arial, Helvetica, sans-serif;
- font-weight: 500;
+ font-family: "Arial, Helvetica, sans-serif";
+ font-size: 17px;
  cursor: pointer;
  transition: box-shadow 0.25s ease 0s;
+}
+
+
+.guidance a {
+  color: inherit; 
+  text-decoration: none; 
 }
 
 button:hover,
@@ -515,7 +519,7 @@ button:focus {
   height: 70.4px;
   --clr: #fa8500;
   --clr-alpha: transparrent;
-  animation: spinner3 1s infinite linear;
+  animation: spinner3 15s infinite linear;
   transform-style: preserve-3d;
 }
 
