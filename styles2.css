@@ -15,14 +15,6 @@
 }
 
 
-.logo img {
-  position: absolute;
-  top: 100px;
-  left: 800px;
-  padding: 5px;
-  width: 250px;
-  height: 200px;
-}
 
 .homelogo img {
   padding: 5px;
@@ -166,22 +158,6 @@
   .sidenav.open {
     width: 250px; 
   }
-
-@media screen and (max-width: 500px) {
-    .header a {
-        float: none;
-        display: block;
-        text-align: left;
-    }
-
-    .header-right {
-        float: none;
-    }
-}
-
-
-
-
 
 ul {
     list-style: none;
@@ -678,3 +654,331 @@ ul {
 
 
   /*under constuction ends */
+
+
+/* MOBILE VIEW */
+
+  @media screen and (max-width: 896px){
+
+    .moneymaker img {
+      --background: linear-gradient(to left, #f7ba2b 0%, #ea5358 100%);
+      position: absolute;
+      top: 5%;
+      left: 50%;
+      padding: 5px;
+      width: 150px;
+      height: 150px;
+      border-radius: 10px;
+      background: #f7ba2b;
+      background: var(--background);
+      white-space: nowrap;
+  }
+
+
+
+  .school {
+    font-family: "Mansalva", sans-serif;
+    z-index: 1;
+    color: #fa8500;
+    top: 23%;
+    left: 15%;
+    position: absolute;
+    font-size: 25px;
+    font-weight: bold;
+  
+  }
+  
+  .english {
+    font-family: "Mansalva", sans-serif;
+    z-index: 1;
+    color: #fa8500;
+    top: 38%;
+    left: 15%;
+    position: absolute;
+    font-size: 25px;
+    font-weight: bold;
+  }
+  
+  .licences {
+    font-family: "Mansalva", sans-serif;
+    z-index: 1;
+    color: #fa8500;
+    top: 50%;
+    left: 15%;
+    position: absolute;
+    font-size: 25px;
+    font-weight: bold;
+  }
+  
+  .exp{
+    font-family: "Mansalva", sans-serif;
+    z-index: 1;
+    color: #fa8500;
+    top: 65%;
+    left: 15%;
+    position: absolute;
+    font-size: 25px;
+    font-weight: bold;
+  }
+  
+
+/* deco cubes*/
+
+.spinner1 {
+  position: fixed;
+  top: 25%;
+  left: 5%;
+  width: 50.4px;
+  height: 50.4px;
+  --clr: #fa8500;
+  --clr-alpha: transparrent;
+  animation: spinner2 4s infinite linear;
+  transform-style: preserve-3d;
+}
+
+.spinner1 > div {
+  background-color: var(--clr-alpha);
+  height: 100%;
+  position: absolute;
+  width: 100%;
+  border: 2px solid var(--clr);
+}
+
+.spinner1 div:nth-of-type(1) {
+  transform: translateZ(-25.8px) rotateY(180deg);
+}
+
+.spinner1 div:nth-of-type(2) {
+  transform: rotateY(-270deg) translateX(50%);
+  transform-origin: top right;
+}
+
+.spinner1 div:nth-of-type(3) {
+  transform: rotateY(270deg) translateX(-50%);
+  transform-origin: center left;
+}
+
+.spinner1 div:nth-of-type(4) {
+  transform: rotateX(90deg) translateY(-50%);
+  transform-origin: top center;
+}
+
+.spinner1 div:nth-of-type(5) {
+  transform: rotateX(-90deg) translateY(50%);
+  transform-origin: bottom center;
+}
+
+.spinner1 div:nth-of-type(6) {
+  transform: translateZ(25.8px);
+}
+
+@keyframes spinner1 {
+  0% {
+    transform: rotate(45deg) rotateX(-25deg) rotateY(25deg);
+  }
+
+  50% {
+    transform: rotate(45deg) rotateX(-385deg) rotateY(25deg);
+  }
+
+  100% {
+    transform: rotate(45deg) rotateX(-385deg) rotateY(385deg);
+  }
+}
+
+
+
+.spinner2 {
+  position: fixed;
+  top: 40%;
+  left: 5%;
+  width: 50.4px;
+  height: 50.4px;
+  --clr: #fa8500;
+  --clr-alpha: transparrent;
+  animation: spinner2 4s infinite linear;
+  transform-style: preserve-3d;
+}
+
+.spinner2 > div {
+  background-color: var(--clr-alpha);
+  height: 100%;
+  position: absolute;
+  width: 100%;
+  border: 2px solid var(--clr);
+}
+
+.spinner2 div:nth-of-type(1) {
+  transform: translateZ(-25.8px) rotateY(180deg);
+}
+
+.spinner2 div:nth-of-type(2) {
+  transform: rotateY(-270deg) translateX(50%);
+  transform-origin: top right;
+}
+
+.spinner2 div:nth-of-type(3) {
+  transform: rotateY(270deg) translateX(-50%);
+  transform-origin: center left;
+}
+
+.spinner2 div:nth-of-type(4) {
+  transform: rotateX(90deg) translateY(-50%);
+  transform-origin: top center;
+}
+
+.spinner2 div:nth-of-type(5) {
+  transform: rotateX(-90deg) translateY(50%);
+  transform-origin: bottom center;
+}
+
+.spinner2 div:nth-of-type(6) {
+  transform: translateZ(25.8px);
+}
+
+@keyframes spinner2 {
+  0% {
+    transform: rotate(45deg) rotateX(-25deg) rotateY(25deg);
+  }
+
+  50% {
+    transform: rotate(45deg) rotateX(-385deg) rotateY(25deg);
+  }
+
+  100% {
+    transform: rotate(45deg) rotateX(-385deg) rotateY(385deg);
+  }
+}
+
+
+.spinner3 {
+  position: fixed;
+  top: 55%;
+  left: 5%;
+  width: 50.4px;
+  height: 50.4px;
+  --clr: #fa8500;
+  --clr-alpha: transparrent;
+  animation: spinner2 4s infinite linear;
+  transform-style: preserve-3d;
+}
+
+.spinner3 > div {
+  background-color: var(--clr-alpha);
+  height: 100%;
+  position: absolute;
+  width: 100%;
+  border: 2px solid var(--clr);
+}
+
+.spinner3 div:nth-of-type(1) {
+  transform: translateZ(-25.8px) rotateY(180deg);
+}
+
+.spinner3 div:nth-of-type(2) {
+  transform: rotateY(-270deg) translateX(50%);
+  transform-origin: top right;
+}
+
+.spinner3 div:nth-of-type(3) {
+  transform: rotateY(270deg) translateX(-50%);
+  transform-origin: center left;
+}
+
+.spinner3 div:nth-of-type(4) {
+  transform: rotateX(90deg) translateY(-50%);
+  transform-origin: top center;
+}
+
+.spinner3 div:nth-of-type(5) {
+  transform: rotateX(-90deg) translateY(50%);
+  transform-origin: bottom center;
+}
+
+.spinner3 div:nth-of-type(6) {
+  transform: translateZ(25.8px);
+}
+
+@keyframes spinner3 {
+  0% {
+    transform: rotate(45deg) rotateX(-25deg) rotateY(25deg);
+  }
+
+  50% {
+    transform: rotate(45deg) rotateX(-385deg) rotateY(25deg);
+  }
+
+  100% {
+    transform: rotate(45deg) rotateX(-385deg) rotateY(385deg);
+  }
+}
+
+
+.spinner4 {
+  position: fixed;
+  top: 70%;
+  left: 5%;
+  width: 50.4px;
+  height: 50.4px;
+  --clr: #fa8500;
+  --clr-alpha: transparrent;
+  animation: spinner2 4s infinite linear;
+  transform-style: preserve-3d;
+}
+
+.spinner4 > div {
+  background-color: var(--clr-alpha);
+  height: 100%;
+  position: absolute;
+  width: 100%;
+  border: 2px solid var(--clr);
+}
+
+.spinner4 div:nth-of-type(1) {
+  transform: translateZ(-25.8px) rotateY(180deg);
+}
+
+.spinner4 div:nth-of-type(2) {
+  transform: rotateY(-270deg) translateX(50%);
+  transform-origin: top right;
+}
+
+.spinner4 div:nth-of-type(3) {
+  transform: rotateY(270deg) translateX(-50%);
+  transform-origin: center left;
+}
+
+.spinner4 div:nth-of-type(4) {
+  transform: rotateX(90deg) translateY(-50%);
+  transform-origin: top center;
+}
+
+.spinner4 div:nth-of-type(5) {
+  transform: rotateX(-90deg) translateY(50%);
+  transform-origin: bottom center;
+}
+
+.spinner4 div:nth-of-type(6) {
+  transform: translateZ(25.8px);
+}
+
+@keyframes spinner4 {
+  0% {
+    transform: rotate(45deg) rotateX(-25deg) rotateY(25deg);
+  }
+
+  50% {
+    transform: rotate(45deg) rotateX(-385deg) rotateY(25deg);
+  }
+
+  100% {
+    transform: rotate(45deg) rotateX(-385deg) rotateY(385deg);
+  }
+}
+
+
+
+
+
+
+  }
