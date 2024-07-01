@@ -660,6 +660,7 @@ ul {
 
   @media screen and (max-width: 767px){
 
+
     .moneymaker img {
       --background: linear-gradient(to left, #f7ba2b 0%, #ea5358 100%);
       position: absolute;

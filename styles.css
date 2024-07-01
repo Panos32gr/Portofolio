@@ -559,11 +559,17 @@ button:focus {
 
 
 @media screen and (max-width: 767px) {
+
+
+  body {
+    overflow-y: auto; 
+    height: 120vh; 
+  }
+
   html, body {
     max-height: 100%;
     max-width: 100%;
     background-size: fill;
-    overflow-y: auto;
     overflow-x: hidden;
     white-space: nowrap;
     margin: 0;
@@ -623,7 +629,7 @@ button:focus {
   }
 
   .openbtn {
-    position: fixed;
+    position: absolute;
     z-index: 1000;
     font-size: 5vw; 
     cursor: pointer;
