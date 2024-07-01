@@ -563,7 +563,7 @@ button:focus {
   html, body {
     max-height: 100%;
     max-width: 100%;
-    background-size: contain;
+    background-size: fill;
     overflow-y: auto;
     overflow-x: hidden;
     white-space: nowrap;
@@ -574,10 +574,10 @@ button:focus {
   .logo img {
     position: absolute;
     top: 10%;
-    left: 50%;
-    transform: translateX(-50%);
+    left: 40%;
+    transform: translateX(-20%);
     padding: 5px;
-    width: 10vw;
+    width: 30vw;
     height: auto;
   }
   
@@ -746,4 +746,4 @@ button:focus {
     50% { transform: rotate(45deg) rotateX(-385deg) rotateY(25deg); }
     100% { transform: rotate(45deg) rotateX(-385deg) rotateY(385deg); }
   }
-  
+}
