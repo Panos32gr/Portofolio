@@ -658,7 +658,7 @@ ul {
 
 /* MOBILE VIEW */
 
-  @media screen and (max-width: 896px){
+  @media screen and (max-width: 767px){
 
     .moneymaker img {
       --background: linear-gradient(to left, #f7ba2b 0%, #ea5358 100%);
@@ -683,7 +683,7 @@ ul {
     top: 23%;
     left: 15%;
     position: absolute;
-    font-size: 20px;
+    font-size: 4vw;
     font-weight: bold;
   
   }
@@ -695,7 +695,7 @@ ul {
     top: 38%;
     left: 15%;
     position: absolute;
-    font-size: 20px;
+    font-size: 4vw;
     font-weight: bold;
   }
   
@@ -706,7 +706,7 @@ ul {
     top: 50%;
     left: 15%;
     position: absolute;
-    font-size: 20px;
+    font-size: 4vw;
     font-weight: bold;
   }
   
@@ -717,7 +717,7 @@ ul {
     top: 65%;
     left: 15%;
     position: absolute;
-    font-size: 20px;
+    font-size: 4vw;
     font-weight: bold;
   }
   
