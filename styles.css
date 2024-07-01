@@ -561,6 +561,9 @@ button:focus {
 
 
   html, body{
+    max-height: 1080px;
+    max-width: 1920px;
+    background-size: contain;
     overflow-y: auto;
     overflow-x: hidden;
     white-space: nowrap;
@@ -638,9 +641,9 @@ button:focus {
   z-index: 1;
   top: 650px;
   left: 280px;
-  width: 200px;
-  height: 200px;
-  perspective: 800px;
+  width: 100px; /* Reduced size */
+  height: 100px; /* Reduced size */
+  perspective: 400px; /* Adjusted for smaller size */
   margin: 50px auto;
 }
 
@@ -654,12 +657,12 @@ button:focus {
 
 .face {
   position: absolute;
-  width: 200px;
-  height: 200px;
+  width: 100px; /* Reduced size */
+  height: 100px; /* Reduced size */
   color: #fa8500;
   font-size: 18px;
   text-align: center;
-  line-height: 200px;
+  line-height: 100px; /* Adjusted for smaller size */
   background: transparent;
   opacity: 0.9;
   border: 2px solid;
@@ -668,30 +671,28 @@ button:focus {
 }
 
 .front {
-  transform: translateZ(100px);
+  transform: translateZ(50px); /* Adjusted for smaller size */
 }
 
 .back {
-  transform: rotateY(180deg) translateZ(100px);
+  transform: rotateY(180deg) translateZ(50px); /* Adjusted for smaller size */
 }
 
 .right {
-  transform: rotateY(90deg) translateZ(100px);
+  transform: rotateY(90deg) translateZ(50px); /* Adjusted for smaller size */
 }
 
 .left {
-  transform: rotateY(-90deg) translateZ(100px);
+  transform: rotateY(-90deg) translateZ(50px); /* Adjusted for smaller size */
 }
 
 .top {
-  transform: rotateX(90deg) translateZ(100px);
+  transform: rotateX(90deg) translateZ(50px); /* Adjusted for smaller size */
 }
 
 .bottom {
-  transform: rotateX(-90deg) translateZ(100px);
+  transform: rotateX(-90deg) translateZ(50px); /* Adjusted for smaller size */
 }
-
-
 
 @keyframes rotate {
   0% {
@@ -705,12 +706,11 @@ button:focus {
 
 
 .spinner1 {
-  display: none;
   position: absolute;
-  top: 180px;
+  top: 200px;
   right: 100px;
-  width: 70.4px;
-  height: 70.4px;
+  width: 35px;
+  height: 35px;
   --clr: #fa8500;
   --clr-alpha: transparrent;
   animation: spinner1 1.6s infinite ease;
@@ -726,7 +726,7 @@ button:focus {
 }
 
 .spinner1 div:nth-of-type(1) {
-  transform: translateZ(-35.2px) rotateY(180deg);
+  transform: translateZ(-17.5px) rotateY(180deg);
 }
 
 .spinner1 div:nth-of-type(2) {
@@ -750,7 +750,7 @@ button:focus {
 }
 
 .spinner1 div:nth-of-type(6) {
-  transform: translateZ(35.2px);
+  transform: translateZ(17.5px);
 }
 
 @keyframes spinner1 {
@@ -769,12 +769,11 @@ button:focus {
 
 
 .spinner2 {
-  display: none;
   position: absolute;
   top: 650px;
-  right: 200px;
-  width: 70.4px;
-  height: 70.4px;
+  right: 100px;
+  width: 35px;
+  height: 35px;
   --clr: #fa8500;
   --clr-alpha: transparrent;
   animation: spinner2 4s infinite linear;
@@ -790,7 +789,7 @@ button:focus {
 }
 
 .spinner2 div:nth-of-type(1) {
-  transform: translateZ(-35.2px) rotateY(180deg);
+  transform: translateZ(-17.5px) rotateY(180deg);
 }
 
 .spinner2 div:nth-of-type(2) {
@@ -814,7 +813,7 @@ button:focus {
 }
 
 .spinner2 div:nth-of-type(6) {
-  transform: translateZ(35.2px);
+  transform: translateZ(17.5px);
 }
 
 @keyframes spinner2 {
@@ -832,12 +831,11 @@ button:focus {
 }
 
 .spinner3 {
-  display: none;
   position: absolute;
-  top: 150px;
+  top: 120px;
   left: 150px;
-  width: 70.4px;
-  height: 70.4px;
+  width: 35px;
+  height: 35px;
   --clr: #fa8500;
   --clr-alpha: transparrent;
   animation: spinner3 15s infinite linear;
@@ -853,7 +851,7 @@ button:focus {
 }
 
 .spinner3 div:nth-of-type(1) {
-  transform: translateZ(-35.2px) rotateY(180deg);
+  transform: translateZ(-17.5px) rotateY(180deg);
 }
 
 .spinner3 div:nth-of-type(2) {
@@ -877,7 +875,7 @@ button:focus {
 }
 
 .spinner3 div:nth-of-type(6) {
-  transform: translateZ(35.2px);
+  transform: translateZ(17.5px);
 }
 
 @keyframes spinner3 {

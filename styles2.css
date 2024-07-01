@@ -683,7 +683,7 @@ ul {
     top: 23%;
     left: 15%;
     position: absolute;
-    font-size: 25px;
+    font-size: 20px;
     font-weight: bold;
   
   }
@@ -695,7 +695,7 @@ ul {
     top: 38%;
     left: 15%;
     position: absolute;
-    font-size: 25px;
+    font-size: 20px;
     font-weight: bold;
   }
   
@@ -706,7 +706,7 @@ ul {
     top: 50%;
     left: 15%;
     position: absolute;
-    font-size: 25px;
+    font-size: 20px;
     font-weight: bold;
   }
   
@@ -717,7 +717,7 @@ ul {
     top: 65%;
     left: 15%;
     position: absolute;
-    font-size: 25px;
+    font-size: 20px;
     font-weight: bold;
   }
   
@@ -728,8 +728,8 @@ ul {
   position: fixed;
   top: 25%;
   left: 5%;
-  width: 50.4px;
-  height: 50.4px;
+  width: 35px;
+  height: 35px;
   --clr: #fa8500;
   --clr-alpha: transparrent;
   animation: spinner2 4s infinite linear;
@@ -745,7 +745,7 @@ ul {
 }
 
 .spinner1 div:nth-of-type(1) {
-  transform: translateZ(-25.8px) rotateY(180deg);
+  transform: translateZ(-17.5px) rotateY(180deg);
 }
 
 .spinner1 div:nth-of-type(2) {
@@ -769,7 +769,7 @@ ul {
 }
 
 .spinner1 div:nth-of-type(6) {
-  transform: translateZ(25.8px);
+  transform: translateZ(17.5px);
 }
 
 @keyframes spinner1 {
@@ -792,8 +792,8 @@ ul {
   position: fixed;
   top: 40%;
   left: 5%;
-  width: 50.4px;
-  height: 50.4px;
+  width: 35px;
+  height: 35px;
   --clr: #fa8500;
   --clr-alpha: transparrent;
   animation: spinner2 4s infinite linear;
@@ -809,7 +809,7 @@ ul {
 }
 
 .spinner2 div:nth-of-type(1) {
-  transform: translateZ(-25.8px) rotateY(180deg);
+  transform: translateZ(-17.5px) rotateY(180deg);
 }
 
 .spinner2 div:nth-of-type(2) {
@@ -833,7 +833,7 @@ ul {
 }
 
 .spinner2 div:nth-of-type(6) {
-  transform: translateZ(25.8px);
+  transform: translateZ(17.5px);
 }
 
 @keyframes spinner2 {
@@ -855,8 +855,8 @@ ul {
   position: fixed;
   top: 55%;
   left: 5%;
-  width: 50.4px;
-  height: 50.4px;
+  width: 35px;
+  height: 35px;
   --clr: #fa8500;
   --clr-alpha: transparrent;
   animation: spinner2 4s infinite linear;
@@ -872,7 +872,7 @@ ul {
 }
 
 .spinner3 div:nth-of-type(1) {
-  transform: translateZ(-25.8px) rotateY(180deg);
+  transform: translateZ(-17.5px) rotateY(180deg);
 }
 
 .spinner3 div:nth-of-type(2) {
@@ -896,7 +896,7 @@ ul {
 }
 
 .spinner3 div:nth-of-type(6) {
-  transform: translateZ(25.8px);
+  transform: translateZ(17.5px);
 }
 
 @keyframes spinner3 {
@@ -918,8 +918,8 @@ ul {
   position: fixed;
   top: 70%;
   left: 5%;
-  width: 50.4px;
-  height: 50.4px;
+  width: 35px;
+  height: 35px;
   --clr: #fa8500;
   --clr-alpha: transparrent;
   animation: spinner2 4s infinite linear;
@@ -935,7 +935,7 @@ ul {
 }
 
 .spinner4 div:nth-of-type(1) {
-  transform: translateZ(-25.8px) rotateY(180deg);
+  transform: translateZ(-17.5px) rotateY(180deg);
 }
 
 .spinner4 div:nth-of-type(2) {
@@ -959,7 +959,7 @@ ul {
 }
 
 .spinner4 div:nth-of-type(6) {
-  transform: translateZ(25.8px);
+  transform: translateZ(17.5px);
 }
 
 @keyframes spinner4 {
