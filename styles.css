@@ -642,6 +642,16 @@ button:focus {
     background-color: #444;
   }
 
+  .logo img {
+    position: absolute;
+    top: 10%;
+    left: 40%;
+    transform: translateX(-20%);
+    padding: 5px;
+    width: 30vw;
+    height: auto;
+  }
+  
   .pinfo {
     font-family: "Mansalva";
     z-index: 1;
