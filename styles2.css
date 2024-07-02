@@ -682,7 +682,7 @@ ul {
     z-index: 1;
     color: #fa8500;
     top: 23%;
-    left: 15%;
+    left: 17%;
     position: absolute;
     font-size: 4vw;
     font-weight: bold;
@@ -694,7 +694,7 @@ ul {
     z-index: 1;
     color: #fa8500;
     top: 38%;
-    left: 15%;
+    left: 17%;
     position: absolute;
     font-size: 4vw;
     font-weight: bold;
@@ -704,8 +704,8 @@ ul {
     font-family: "Mansalva", sans-serif;
     z-index: 1;
     color: #fa8500;
-    top: 50%;
-    left: 15%;
+    top: 53%;
+    left: 17%;
     position: absolute;
     font-size: 4vw;
     font-weight: bold;
@@ -715,10 +715,10 @@ ul {
     font-family: "Mansalva", sans-serif;
     z-index: 1;
     color: #fa8500;
-    top: 65%;
-    left: 15%;
+    top: 68%;
+    left: 17%;
     position: absolute;
-    font-size: 4vw;
+    font-size: 3vw;
     font-weight: bold;
   }
   
