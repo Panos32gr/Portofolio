@@ -679,7 +679,7 @@ ul {
 
   .school {
     font-family: "Mansalva", sans-serif;
-    z-index: 1;
+    z-index: -1;
     color: #fa8500;
     top: 23%;
     left: 17%;
@@ -691,7 +691,7 @@ ul {
   
   .english {
     font-family: "Mansalva", sans-serif;
-    z-index: 1;
+    z-index: -1;
     color: #fa8500;
     top: 38%;
     left: 17%;
@@ -702,7 +702,7 @@ ul {
   
   .licences {
     font-family: "Mansalva", sans-serif;
-    z-index: 1;
+    z-index: -1;
     color: #fa8500;
     top: 53%;
     left: 17%;
@@ -713,7 +713,7 @@ ul {
   
   .exp{
     font-family: "Mansalva", sans-serif;
-    z-index: 1;
+    z-index: -1;
     color: #fa8500;
     top: 68%;
     left: 17%;
