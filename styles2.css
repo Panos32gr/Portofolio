@@ -133,13 +133,13 @@
 
 .sidenavlogo img {
   position: absolute;
-  top: 100px;
+  top: 10%;
   display: block;
-  width: 50%;
-  height: 50%;
+  width: 70%; 
+  height: auto;
+  left: 50%;
+  transform: translateX(-50%);
   padding: 5px;
-  width: 240px;
-  height: 240px;
 }
 
 .openbtn {
@@ -727,6 +727,76 @@ ul {
     font-weight: bold;
   }
   
+
+
+  .sidenav {
+    height: 100%;
+    width: 0; 
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #fa8500;
+    overflow-x: hidden;
+    transition: 0.5s;
+  }
+
+  .sidenav.open {
+    width: 60%; 
+  }
+
+  .sidenav h2 {
+    font-family: "Mansalva";
+    left: 5%;
+    font-size: 5vw; 
+  }
+
+  .sidenav a {
+    color: rgb(0, 0, 0);
+    padding: 3vw; 
+    font-size: 6vw; 
+    font-family: "Helvetica";
+    display: block;
+    position: relative;
+    top: 40%; 
+  }
+
+  .sidenav a:hover {
+    background-color: #000;
+    color: #fa8500;
+  }
+
+  .sidenavlogo img {
+    position: absolute;
+    top: 10%;
+    display: block;
+    width: 70%; 
+    height: auto;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 5px;
+  }
+
+  .openbtn {
+    position: absolute;
+    z-index: 1000;
+    font-size: 5vw; 
+    cursor: pointer;
+    background-color: #fa8500;
+    color: rgb(0, 0, 0);
+    padding: 7px 12px;
+    border: none;
+    left: 2%;
+    top: 2.5%;
+    transition: 0.5s;
+  }
+
+  .openbtn:hover {
+    background-color: #444;
+  }
+
+
+
 
 /* deco cubes*/
 
