@@ -125,7 +125,7 @@ body{
   color: rgb(0, 0, 0);
   padding: 10px 15px;
   border: none;
-  left: 1%;
+  left: 10px;
   top: 1.8%;
   transition: 0.5s;
 }
