@@ -534,6 +534,16 @@ ul {
 
 
 
+.ucnotice{
+  color: #fa8500;
+  font-size: 50px;
+  font-family: "Mansalva", sans-serif;
+  font-weight: bold;
+  font-style: normal;
+  position: absolute;
+  top: 400px;
+  left: 700px;
+}
 
 
 
