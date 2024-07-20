@@ -551,116 +551,134 @@ ul {
 
 
 
-/*under construction image*/
+/*email form */
 
-.loader {
-    position: absolute;
-    top: 250px;
-    left: 780px;
-    width: fit-content;
-    height: fit-content;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  
-  .truckWrapper {
-    width: 200px;
-    height: 100px;
-    display: flex;
-    flex-direction: column;
-    position: relative;
-    align-items: center;
-    justify-content: flex-end;
-    overflow-x: hidden;
-  }
-  /* truck upper body */
-  .truckBody {
-    width: 130px;
-    height: fit-content;
-    margin-bottom: 6px;
-    animation: motion 1s linear infinite;
-  }
-  /* truck suspension animation*/
-  @keyframes motion {
-    0% {
-      transform: translateY(0px);
-    }
-    50% {
-      transform: translateY(3px);
-    }
-    100% {
-      transform: translateY(0px);
-    }
-  }
-  /* truck's tires */
-  .truckTires {
-    width: 130px;
-    height: fit-content;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 0px 10px 0px 15px;
-    position: absolute;
-    bottom: 0;
-  }
-  .truckTires svg {
-    width: 24px;
-  }
-  
-  .road {
-    width: 100%;
-    height: 1.5px;
-    background-color: #282828;
-    position: relative;
-    bottom: 0;
-    align-self: flex-end;
-    border-radius: 3px;
-  }
-  .road::before {
-    content: "";
-    position: absolute;
-    width: 20px;
-    height: 100%;
-    background-color: #282828;
-    right: -50%;
-    border-radius: 3px;
-    animation: roadAnimation 1.4s linear infinite;
-    border-left: 10px solid white;
-  }
-  .road::after {
-    content: "";
-    position: absolute;
-    width: 10px;
-    height: 100%;
-    background-color: #282828;
-    right: -65%;
-    border-radius: 3px;
-    animation: roadAnimation 1.4s linear infinite;
-    border-left: 4px solid white;
-  }
-  
-  .lampPost {
-    position: absolute;
-    bottom: 0;
-    right: -90%;
-    height: 90px;
-    animation: roadAnimation 1.4s linear infinite;
-  }
-  
-  @keyframes roadAnimation {
-    0% {
-      transform: translateX(0px);
-    }
-    100% {
-      transform: translateX(-350px);
-    }
-  }
+.form {
+  position: absolute;
+  top: 20%;
+  left: 40%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+  background-image: linear-gradient(45deg, #330808, 
+  #3a2c09);
+  border-radius: 2.5em;
+  padding: 30px;
+  width: 238px;
+  height: 290px;
+}
 
+.form::before {
+  content: '';
+  background-image: linear-gradient(45deg, #ff0000, 
+  #ffb700);
+  height: 358px;
+  width: 309px;
+  position: absolute;
+  margin-top: -34px;
+  margin-left: px;
+  z-index: -1;
+  border-radius: 2.7em;
+}
 
-  /*under constuction ends */
+.button {
+  margin-top: 10px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 17px;
+  background: #ff8500;
+  color: black;
+  padding: 0.7em 5.5em;
+  display: flex;
+  align-items: center;
+  border: 2px solid #66da4300;
+  border-radius: 5em;
+  overflow: hidden;
+  transition: all 0.2s;
+  cursor: pointer;
+}
 
+.button:hover {
+  border: 2px solid #ff8500;
+  background: #00000000;
+  color: #ff5900;
+}
 
+.button:active {
+  border: 2px solid #66da4300;
+  background: #ff8500;
+  color: black;
+}
+
+.input {
+  width: calc(100% - 10px);
+  padding: 8px;
+  margin-bottom: 20px;
+  border: 1px solid #66da4300;
+  border-bottom: 1px solid #ff8500;
+  outline: none;
+  background-color: transparent;
+  color: #ff5900;
+  font-family: Arial, Helvetica, sans-serif;
+  transition: 0.2s;
+}
+
+.input:focus {
+  border: 1px solid #66da4300;
+  border-bottom: 1px solid #ff8500;
+  background-color: transparent;
+  color: white;
+}
+
+.input::placeholder {
+  color: #9b725b;
+}
+
+.textarea {
+  font-family: Arial, Helvetica, sans-serif;
+  width: calc(100% - 10px);
+  padding: 8px;
+  height: 100px;
+  margin-bottom: 20px;
+  border: 1px solid #66da4300;
+  border-bottom: 1px solid #ff8500;
+  outline: none;
+  background-color: transparent;
+  color: #ff8500;
+}
+
+.textarea::placeholder {
+  color: #9b725b;
+}
+
+.textarea:focus {
+  border: 1px solid #66da4300;
+  border-bottom: 1px solid #ff8500;
+  background-color: transparent;
+  color: white;
+}
+/*email form ends */
+.txt{
+  font-family: "Mansalva";
+  z-index: 1;
+  color: #fa8500;
+  top: 5%;;
+  left: 28%;
+  position: absolute;
+  font-size: 200%;
+  font-weight: bold
+}
+
+.txt2{
+  font-family: "Mansalva";
+  z-index: 1;
+  color: #fa8500;
+  top: 93%;;
+  left: 65%;
+  position: absolute;
+  font-size: 200%;
+  font-weight: bold
+}
 /* MOBILE VIEW */
 
   @media screen and (max-width: 767px){
@@ -675,7 +693,7 @@ ul {
       width: 150px;
       height: 150px;
       border-radius: 10px;
-      background: #f7ba2b;
+      background: #ff8500;
       background: var(--background);
       white-space: nowrap;
   }
