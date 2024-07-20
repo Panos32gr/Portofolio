@@ -679,10 +679,14 @@ ul {
   font-size: 200%;
   font-weight: bold
 }
+<<<<<<< HEAD
 
 
 
 /* MOBILE VIEW FOR RESUME PAGE */
+=======
+/* MOBILE VIEW FOR RESUME PAGE*/
+>>>>>>> e6fd8da9115c82a0ed84b05e488e1ee89edf979a
 
   @media screen and (max-width: 767px){
 
