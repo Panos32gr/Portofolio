@@ -747,6 +747,7 @@ height: 100px;
 margin-bottom: 20px;
 border: 1px solid #66da4300;
 border-bottom: 1px solid #ff8500;
+resize: none;
 outline: none;
 background-color: transparent;
 color: #ff8500;
@@ -1040,6 +1041,7 @@ font-weight: bold
   border: 1px solid #66da4300;
   border-bottom: 1px solid #ff8500;
   outline: none;
+  resize: none;
   background-color: transparent;
   color: #ff8500;
   }
