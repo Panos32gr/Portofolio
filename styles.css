@@ -1,11 +1,4 @@
-.mansalva-regular {
-  font-family: "Mansalva";
-  font-weight: 400;
-  font-style: normal;
-}
-
-html,
-body {
+html,body {
   overflow-y: hidden;
   overflow-x: hidden;
   white-space: nowrap;
