@@ -559,8 +559,7 @@ button:focus {
 
 @media screen and (max-width: 767px) {
 
-  html,
-  body {
+  .html,body {
     overflow-y: hidden;
     overflow-x: hidden;
     white-space: nowrap;
