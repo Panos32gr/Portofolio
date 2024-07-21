@@ -945,7 +945,7 @@ ul {
   .form {
     position: absolute;
     top: 30%;
-    left: 40%;
+    left: 25%;
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -1057,7 +1057,7 @@ ul {
     ;
     left: 28%;
     position: absolute;
-    font-size: 200%;
+    font-size: 5vw;
     font-weight: bold
   }
   
@@ -1066,10 +1066,9 @@ ul {
     z-index: 1;
     color: #fa8500;
     top: 93%;
-    ;
     left: 5%;
     position: absolute;
-    font-size: 200%;
+    font-size: 5vw;
     font-weight: bold
   }
 
