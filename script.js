@@ -1,8 +1,8 @@
-document.addEventListener('DOMContentLoaded', function() {
-  emailjs.init('zBAkN7Fmv44dFqA_O'); 
+document.addEventListener('DOMContentLoaded', function () {
+  emailjs.init('zBAkN7Fmv44dFqA_O');
 
   function sendMail(event) {
-    event.preventDefault(); 
+    event.preventDefault();
 
     var params = {
       name: document.getElementById("name").value,
@@ -11,10 +11,10 @@ document.addEventListener('DOMContentLoaded', function() {
     };
 
     emailjs.send("service_z4phvkq", "template_87hzluf", params)
-      .then(function(response) {
+      .then(function (response) {
         console.log('SUCCESS!', response.status, response.text);
         alert("Email has been sent successfully.");
-      }, function(error) {
+      }, function (error) {
         console.log('FAILED...', error);
         alert("Email sending failed.");
       });
