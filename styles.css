@@ -1,11 +1,17 @@
-html,body {
+.mansalva-regular {
+  font-family: "Mansalva";
+  font-weight: 400;
+  font-style: normal;
+}
+
+html, body{
   overflow-y: hidden;
   overflow-x: hidden;
   white-space: nowrap;
 }
 
 
-body {
+body{
   background-color: #000;
 }
 
@@ -38,8 +44,7 @@ body {
   font-family: "Mansalva";
   z-index: 1;
   color: #fa8500;
-  top: 35%;
-  ;
+  top: 35%;;
   left: 35%;
   position: absolute;
   font-size: 200%;
@@ -58,14 +63,14 @@ body {
 
 .sidenav {
   height: 100%;
-  width: 0;
+  width: 0; 
   position: fixed;
   z-index: 1;
   top: 0;
   left: 0;
   background-color: #fa8500;
   overflow-x: hidden;
-  transition: 0.5s;
+  transition: 0.5s; 
 }
 
 .sidenav h2 {
@@ -83,7 +88,7 @@ body {
   color: rgb(0, 0, 0);
   padding: 16px;
   font-size: 30px;
-  font-family: "Mansalva";
+  font-family: "Helvetica";
   display: block;
   position: relative;
   top: 300px;
@@ -103,7 +108,7 @@ body {
   position: absolute;
   top: 10%;
   display: block;
-  width: 70%;
+  width: 70%; 
   height: auto;
   left: 50%;
   transform: translateX(-50%);
@@ -130,7 +135,7 @@ body {
 }
 
 .sidenav.open {
-  width: 250px;
+  width: 250px; 
 }
 
 ul {
@@ -138,7 +143,7 @@ ul {
 }
 
 
-.util {
+.util{
   list-style: none;
   position: absolute;
   display: flex;
@@ -151,31 +156,31 @@ ul {
 
 
 
-.guidance {
-  display: inline-block;
-  margin: 20px;
-  z-index: 1;
-  border-radius: 999px;
-  padding: 1em 2em;
-  background: linear-gradient(117deg, #fa8500, rgb(255, 195, 116));
-  border: none;
-  color: #000;
-  font-family: "Arial, Helvetica, sans-serif";
-  font-size: 120%;
-  cursor: pointer;
-  transition: box-shadow 0.25s ease 0s;
+.guidance{
+ display: inline-block;
+ margin: 20px;
+ z-index: 1;
+ border-radius: 999px;
+ padding: 1em 2em;
+ background: linear-gradient(117deg, #fa8500, rgb(255, 195, 116));
+ border: none;
+ color:  #000;
+ font-family: "Arial, Helvetica, sans-serif";
+ font-size: 120%;
+ cursor: pointer;
+ transition: box-shadow 0.25s ease 0s;
 }
 
 
 .guidance a {
-  color: inherit;
-  text-decoration: none;
+  color: inherit; 
+  text-decoration: none; 
 }
 
 button:hover,
 button:focus {
-  background: linear-gradient(117deg, #fa8500, rgb(252, 193, 0));
-  box-shadow: 0 0.1rem 0.8rem rgb(254, 100, 70);
+ background: linear-gradient(117deg, #fa8500, rgb(252, 193, 0));
+ box-shadow: 0 0.1rem 0.8rem rgb(254, 100, 70);
 }
 
 .iconcontainer {
@@ -283,7 +288,7 @@ button:focus {
   background-color: #0274b3;
 }
 
-
+  
 
 
 /* decoration elements css below. */
@@ -371,7 +376,7 @@ button:focus {
   transform-style: preserve-3d;
 }
 
-.spinner1>div {
+.spinner1 > div {
   background-color: var(--clr-alpha);
   height: 100%;
   position: absolute;
@@ -434,7 +439,7 @@ button:focus {
   transform-style: preserve-3d;
 }
 
-.spinner2>div {
+.spinner2 > div {
   background-color: var(--clr-alpha);
   height: 100%;
   position: absolute;
@@ -496,7 +501,7 @@ button:focus {
   transform-style: preserve-3d;
 }
 
-.spinner3>div {
+.spinner3 > div {
   background-color: var(--clr-alpha);
   height: 100%;
   position: absolute;
@@ -552,19 +557,19 @@ button:focus {
 
 @media screen and (max-width: 767px) {
 
-  .html,body {
-    overflow-y: hidden;
-    overflow-x: hidden;
-    white-space: nowrap;
 
+  body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; 
   }
 
   .bg-image {
-    background-size: contain;
+    background-size: cover; 
     background-position: center;
-    position: absolute;
-    width: 100%;
-    height: 100%;
+    position: relative;
+    width: 100vw; 
+    height: 100vh; 
   }
 
   .homelogo img {
@@ -573,7 +578,7 @@ button:focus {
 
   .sidenav {
     height: 100%;
-    width: 0;
+    width: 0; 
     position: fixed;
     z-index: 1;
     top: 0;
@@ -584,23 +589,23 @@ button:focus {
   }
 
   .sidenav.open {
-    width: 60%;
+    width: 60%; 
   }
 
   .sidenav h2 {
     font-family: "Mansalva";
     left: 5%;
-    font-size: 5vw;
+    font-size: 5vw; 
   }
 
   .sidenav a {
     color: rgb(0, 0, 0);
-    padding: 3vw;
-    font-size: 6vw;
-    font-family: "Mansalva";
+    padding: 3vw; 
+    font-size: 6vw; 
+    font-family: "Helvetica";
     display: block;
     position: relative;
-    top: 40%;
+    top: 40%; 
   }
 
   .sidenav a:hover {
@@ -612,7 +617,7 @@ button:focus {
     position: absolute;
     top: 10%;
     display: block;
-    width: 70%;
+    width: 70%; 
     height: auto;
     left: 50%;
     transform: translateX(-50%);
@@ -622,7 +627,7 @@ button:focus {
   .openbtn {
     position: absolute;
     z-index: 1000;
-    font-size: 5vw;
+    font-size: 5vw; 
     cursor: pointer;
     background-color: #fa8500;
     color: rgb(0, 0, 0);
@@ -646,7 +651,7 @@ button:focus {
     width: 30vw;
     height: auto;
   }
-
+  
   .pinfo {
     font-family: "Mansalva";
     z-index: 1;
@@ -690,7 +695,7 @@ button:focus {
 
   .guidance a {
     color: inherit;
-    text-decoration: none;
+    text-decoration: none; 
   }
 
   button:hover,
@@ -705,8 +710,8 @@ button:focus {
     top: 70%;
     left: 25%;
     transform: translateX(-50%);
-    width: 12vw;
-    height: 12vw;
+    width: 10vw;
+    height: 10vw;
     perspective: 400px;
     margin: 50px auto;
   }
@@ -726,7 +731,7 @@ button:focus {
     color: #fa8500;
     font-size: 2vw;
     text-align: center;
-    line-height: 12vw;
+    line-height: 10vw;
     background: transparent;
     opacity: 0.9;
     border: 2px solid;
@@ -734,43 +739,19 @@ button:focus {
     box-shadow: 0 0 100px rgba(255, 125, 4, 0.8);
   }
 
-  .front {
-    transform: translateZ(6vw);
-  }
-
-  .back {
-    transform: rotateY(180deg) translateZ(6vw);
-  }
-
-  .right {
-    transform: rotateY(90deg) translateZ(6vw);
-  }
-
-  .left {
-    transform: rotateY(-90deg) translateZ(6vw);
-  }
-
-  .top {
-    transform: rotateX(90deg) translateZ(6vw);
-  }
-
-  .bottom {
-    transform: rotateX(-90deg) translateZ(6vw);
-  }
+  .front { transform: translateZ(5vw); }
+  .back { transform: rotateY(180deg) translateZ(5vw); }
+  .right { transform: rotateY(90deg) translateZ(5vw); }
+  .left { transform: rotateY(-90deg) translateZ(5vw); }
+  .top { transform: rotateX(90deg) translateZ(5vw); }
+  .bottom { transform: rotateX(-90deg) translateZ(5vw); }
 
   @keyframes rotate {
-    0% {
-      transform: rotateX(0) rotateY(0) rotateZ(0);
-    }
-
-    100% {
-      transform: rotateX(360deg) rotateY(360deg) rotateZ(360deg);
-    }
+    0% { transform: rotateX(0) rotateY(0) rotateZ(0); }
+    100% { transform: rotateX(360deg) rotateY(360deg) rotateZ(360deg); }
   }
 
-  .spinner1,
-  .spinner2,
-  .spinner3 {
+  .spinner1, .spinner2, .spinner3 {
     position: absolute;
     width: 5vw;
     height: 5vw;
@@ -779,27 +760,11 @@ button:focus {
     transform-style: preserve-3d;
   }
 
-  .spinner1 {
-    top: 20%;
-    right: 7%;
-    animation: spinner1 1.6s infinite ease;
-  }
+  .spinner1 { top: 20%; right: 7%; animation: spinner1 1.6s infinite ease; }
+  .spinner2 { top: 65%; left: 11%; animation: spinner2 4s infinite linear; }
+  .spinner3 { top: 14%; left: 8%; animation: spinner3 15s infinite linear; }
 
-  .spinner2 {
-    top: 65%;
-    left: 11%;
-    animation: spinner2 4s infinite linear;
-  }
-
-  .spinner3 {
-    top: 14%;
-    left: 8%;
-    animation: spinner3 15s infinite linear;
-  }
-
-  .spinner1>div,
-  .spinner2>div,
-  .spinner3>div {
+  .spinner1 > div, .spinner2 > div, .spinner3 > div {
     background-color: var(--clr-alpha);
     height: 100%;
     position: absolute;
@@ -807,85 +772,49 @@ button:focus {
     border: 2px solid var(--clr);
   }
 
-  .spinner1 div:nth-of-type(1),
-  .spinner2 div:nth-of-type(1),
-  .spinner3 div:nth-of-type(1) {
+  .spinner1 div:nth-of-type(1), .spinner2 div:nth-of-type(1), .spinner3 div:nth-of-type(1) {
     transform: translateZ(-2.5vw) rotateY(180deg);
   }
 
-  .spinner1 div:nth-of-type(2),
-  .spinner2 div:nth-of-type(2),
-  .spinner3 div:nth-of-type(2) {
+  .spinner1 div:nth-of-type(2), .spinner2 div:nth-of-type(2), .spinner3 div:nth-of-type(2) {
     transform: rotateY(-270deg) translateX(50%);
     transform-origin: top right;
   }
 
-  .spinner1 div:nth-of-type(3),
-  .spinner2 div:nth-of-type(3),
-  .spinner3 div:nth-of-type(3) {
+  .spinner1 div:nth-of-type(3), .spinner2 div:nth-of-type(3), .spinner3 div:nth-of-type(3) {
     transform: rotateY(270deg) translateX(-50%);
     transform-origin: center left;
   }
 
-  .spinner1 div:nth-of-type(4),
-  .spinner2 div:nth-of-type(4),
-  .spinner3 div:nth-of-type(4) {
+  .spinner1 div:nth-of-type(4), .spinner2 div:nth-of-type(4), .spinner3 div:nth-of-type(4) {
     transform: rotateX(90deg) translateY(-50%);
     transform-origin: top center;
   }
 
-  .spinner1 div:nth-of-type(5),
-  .spinner2 div:nth-of-type(5),
-  .spinner3 div:nth-of-type(5) {
+  .spinner1 div:nth-of-type(5), .spinner2 div:nth-of-type(5), .spinner3 div:nth-of-type(5) {
     transform: rotateX(-90deg) translateY(50%);
     transform-origin: bottom center;
   }
 
-  .spinner1 div:nth-of-type(6),
-  .spinner2 div:nth-of-type(6),
-  .spinner3 div:nth-of-type(6) {
+  .spinner1 div:nth-of-type(6), .spinner2 div:nth-of-type(6), .spinner3 div:nth-of-type(6) {
     transform: translateZ(2.5vw);
   }
 
   @keyframes spinner1 {
-    0% {
-      transform: rotate(45deg) rotateX(-25deg) rotateY(25deg);
-    }
-
-    50% {
-      transform: rotate(45deg) rotateX(-385deg) rotateY(25deg);
-    }
-
-    100% {
-      transform: rotate(45deg) rotateX(-385deg) rotateY(385deg);
-    }
+    0% { transform: rotate(45deg) rotateX(-25deg) rotateY(25deg); }
+    50% { transform: rotate(45deg) rotateX(-385deg) rotateY(25deg); }
+    100% { transform: rotate(45deg) rotateX(-385deg) rotateY(385deg); }
   }
 
   @keyframes spinner2 {
-    0% {
-      transform: rotate(45deg) rotateX(-25deg) rotateY(25deg);
-    }
-
-    50% {
-      transform: rotate(45deg) rotateX(-385deg) rotateY(25deg);
-    }
-
-    100% {
-      transform: rotate(45deg) rotateX(-385deg) rotateY(385deg);
-    }
+    0% { transform: rotate(45deg) rotateX(-25deg) rotateY(25deg); }
+    50% { transform: rotate(45deg) rotateX(-385deg) rotateY(25deg); }
+    100% { transform: rotate(45deg) rotateX(-385deg) rotateY(385deg); }
   }
 
   @keyframes spinner3 {
-    0% {
-      transform: rotate(45deg) rotateX(-25deg) rotateY(25deg);
-    }
-
-    50% {
-      transform: rotate(45deg) rotateX(-385deg) rotateY(25deg);
-    }
-
-    100% {
-      transform: rotate(45deg) rotateX(-385deg) rotateY(385deg);
-    }
+    0% { transform: rotate(45deg) rotateX(-25deg) rotateY(25deg); }
+    50% { transform: rotate(45deg) rotateX(-385deg) rotateY(25deg); }
+    100% { transform: rotate(45deg) rotateX(-385deg) rotateY(385deg); }
   }
 }
