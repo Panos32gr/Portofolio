@@ -800,13 +800,19 @@ ul {
 /* MOBILE VIEW FOR RESUME PAGE */
 
 @media screen and (max-width: 767px) {
+  .body, html{
+    overflow-x: hidden;
+  }
 
+  .homelogo img {
+    display: none;
+  }
 
   .moneymaker img {
     --background: linear-gradient(to left, #f7ba2b 0%, #ea5358 100%);
     position: absolute;
     top: 5%;
-    left: 50%;
+    left: 40%;
     padding: 5px;
     width: 150px;
     height: 150px;
@@ -869,13 +875,26 @@ ul {
     height: 100%;
     width: 0;
     position: fixed;
-    z-index: 1;
+    z-index: 1000;
     top: 0;
     left: 0;
     background-color: #fa8500;
     overflow-x: hidden;
     transition: 0.5s;
   }
+
+  .sidenavlogo img {
+    position:absolute;
+    top: 20%;
+    display: block;
+    width: 70%;
+    height: auto;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 5px;
+  }
+  
+
 
   .sidenav.open {
     width: 60%;
@@ -891,10 +910,10 @@ ul {
     color: rgb(0, 0, 0);
     padding: 3vw;
     font-size: 6vw;
-    font-family: "Helvetica";
+    font-family: "Mansalva";
     display: block;
     position: relative;
-    top: 40%;
+    top: 30%;
   }
 
   .sidenav a:hover {
@@ -902,16 +921,7 @@ ul {
     color: #fa8500;
   }
 
-  .sidenavlogo img {
-    position: absolute;
-    top: 10%;
-    display: block;
-    width: 70%;
-    height: auto;
-    left: 50%;
-    transform: translateX(-50%);
-    padding: 5px;
-  }
+
 
   .openbtn {
     position: absolute;
@@ -932,7 +942,154 @@ ul {
   }
 
 
+  .form {
+    position: absolute;
+    top: 30%;
+    left: 40%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+    background-image: linear-gradient(45deg, #330808,
+        #3a2c09);
+    border-radius: 2.5em;
+    padding: 30px;
+    width: 238px;
+    height: 290px;
+  }
+  
+  .form::before {
+    content: '';
+    background-image: linear-gradient(45deg, #ff0000,
+        #ffb700);
+    height: 358px;
+    width: 309px;
+    position: absolute;
+    margin-top: -34px;
+    margin-left: px;
+    z-index: -1;
+    border-radius: 2.7em;
+  }
+  
+  .button {
+    margin-top: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 17px;
+    background: #ff8500;
+    color: black;
+    padding: 0.7em 5.5em;
+    display: flex;
+    align-items: center;
+    border: 2px solid #66da4300;
+    border-radius: 5em;
+    overflow: hidden;
+    transition: all 0.2s;
+    cursor: pointer;
+  }
+  
+  .button:hover {
+    border: 2px solid #ff8500;
+    background: #00000000;
+    color: #ff5900;
+  }
+  
+  .button:active {
+    border: 2px solid #66da4300;
+    background: #ff8500;
+    color: black;
+  }
+  
+  .input {
+    width: 235px;
+    padding: 8px;
+    margin-bottom: 20px;
+    border: 1px solid #66da4300;
+    border-bottom: 1px solid #ff8500;
+    outline: none;
+    background-color: transparent;
+    color: #ff5900;
+    font-family: Arial, Helvetica, sans-serif;
+    transition: 0.2s;
+  }
+  
+  .input:focus {
+    border: 1px solid #66da4300;
+    border-bottom: 1px solid #ff8500;
+    background-color: transparent;
+    color: white;
+  }
+  
+  .input::placeholder {
+    color: #9b725b;
+  }
+  
+  .textarea {
+    font-family: Arial, Helvetica, sans-serif;
+    width: 235px;
+    padding: 8px;
+    height: 100px;
+    margin-bottom: 20px;
+    border: 1px solid #66da4300;
+    border-bottom: 1px solid #ff8500;
+    outline: none;
+    background-color: transparent;
+    color: #ff8500;
+    resize: none;
+  }
+  
+  .textarea::placeholder {
+    color: #9b725b;
+  }
+  
+  .textarea:focus {
+    border: 1px solid #66da4300;
+    border-bottom: 1px solid #ff8500;
+    background-color: transparent;
+    color: white;
+  }
+  
+  /*email form ends */
+  .txt {
+    font-family: "Mansalva";
+    z-index: 1;
+    color: #fa8500;
+    top: 5%;
+    ;
+    left: 28%;
+    position: absolute;
+    font-size: 200%;
+    font-weight: bold
+  }
+  
+  .txt2 {
+    font-family: "Mansalva";
+    z-index: 1;
+    color: #fa8500;
+    top: 93%;
+    ;
+    left: 5%;
+    position: absolute;
+    font-size: 200%;
+    font-weight: bold
+  }
 
+
+  .ucnotice {
+    color: #fa8500;
+    font-size: 8vw;
+    font-family: "Mansalva", sans-serif;
+    font-weight: bold;
+    font-style: normal;
+    position: absolute;
+    top: 35%;
+    left: 35%;
+  }
+
+
+  .loader {
+    display: none;
+  }
+  
 
   /* deco cubes*/
 
