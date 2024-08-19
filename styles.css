@@ -1,17 +1,11 @@
-.mansalva-regular {
-  font-family: "Mansalva";
-  font-weight: 400;
-  font-style: normal;
-}
-
-html, body{
+html,
+body {
   overflow-y: hidden;
   overflow-x: hidden;
   white-space: nowrap;
 }
 
-
-body{
+body {
   background-color: #000;
 }
 
@@ -37,20 +31,19 @@ body{
   padding: 5px;
   width: 230px;
   height: 190px;
+  opacity: 0;
 }
 
-
 .pinfo {
-  font-family: "Mansalva";
+  font-family: "Poppins", sans-serif;
   z-index: 1;
   color: #fa8500;
-  top: 35%;;
+  top: 35%;
   left: 35%;
   position: absolute;
   font-size: 200%;
   font-weight: bold;
 }
-
 
 .homelogo img {
   padding: 5px;
@@ -63,14 +56,14 @@ body{
 
 .sidenav {
   height: 100%;
-  width: 0; 
+  width: 0;
   position: fixed;
   z-index: 1;
   top: 0;
   left: 0;
   background-color: #fa8500;
   overflow-x: hidden;
-  transition: 0.5s; 
+  transition: 0.5s;
 }
 
 .sidenav h2 {
@@ -108,13 +101,12 @@ body{
   position: absolute;
   top: 10%;
   display: block;
-  width: 70%; 
+  width: 70%;
   height: auto;
   left: 50%;
   transform: translateX(-50%);
   padding: 5px;
 }
-
 
 .openbtn {
   position: fixed;
@@ -135,15 +127,14 @@ body{
 }
 
 .sidenav.open {
-  width: 250px; 
+  width: 250px;
 }
 
 ul {
   list-style: none;
 }
 
-
-.util{
+.util {
   list-style: none;
   position: absolute;
   display: flex;
@@ -154,40 +145,37 @@ ul {
   font-style: normal;
 }
 
-
-
-.guidance{
- display: inline-block;
- margin: 20px;
- z-index: 1;
- border-radius: 999px;
- padding: 1em 2em;
- background: linear-gradient(117deg, #fa8500, rgb(255, 195, 116));
- border: none;
- color:  #000;
- font-family: "Arial, Helvetica, sans-serif";
- font-size: 120%;
- cursor: pointer;
- transition: box-shadow 0.25s ease 0s;
+.guidance {
+  display: inline-block;
+  margin: 20px;
+  z-index: 1;
+  border-radius: 999px;
+  padding: 1em 2em;
+  background: linear-gradient(117deg, #fa8500, rgb(255, 195, 116));
+  border: none;
+  color: #000;
+  font-family: "Arial, Helvetica, sans-serif";
+  font-size: 120%;
+  cursor: pointer;
+  transition: box-shadow 0.25s ease 0s;
 }
 
-
 .guidance a {
-  color: inherit; 
-  text-decoration: none; 
+  color: inherit;
+  text-decoration: none;
 }
 
 button:hover,
 button:focus {
- background: linear-gradient(117deg, #fa8500, rgb(252, 193, 0));
- box-shadow: 0 0.1rem 0.8rem rgb(254, 100, 70);
+  background: linear-gradient(117deg, #fa8500, rgb(252, 193, 0));
+  box-shadow: 0 0.1rem 0.8rem rgb(254, 100, 70);
 }
 
 .iconcontainer {
   display: flex;
   position: fixed;
   bottom: 0;
-  right: 20px;
+  left: -20%;
   justify-content: center;
   align-items: center;
   z-index: 1;
@@ -263,33 +251,32 @@ button:focus {
 }
 
 .iconcontainer .icon-content a[data-social="linkedin"] .filled,
-.iconcontainer .icon-content a[data-social="linkedin"]~.tooltip {
+.iconcontainer .icon-content a[data-social="linkedin"] ~ .tooltip {
   background-color: #0274b3;
 }
 
 .iconcontainer .icon-content a[data-social="github"] .filled,
-.iconcontainer .icon-content a[data-social="github"]~.tooltip {
+.iconcontainer .icon-content a[data-social="github"] ~ .tooltip {
   background-color: #24262a;
 }
 
 .iconcontainer .icon-content a[data-social="instagram"] .filled,
-.iconcontainer .icon-content a[data-social="instagram"]~.tooltip {
-  background: linear-gradient(45deg,
-      #405de6,
-      #5b51db,
-      #b33ab4,
-      #c135b4,
-      #e1306c,
-      #fd1f1f);
+.iconcontainer .icon-content a[data-social="instagram"] ~ .tooltip {
+  background: linear-gradient(
+    45deg,
+    #405de6,
+    #5b51db,
+    #b33ab4,
+    #c135b4,
+    #e1306c,
+    #fd1f1f
+  );
 }
 
 .iconcontainer .icon-content a[data-social="facebook"] .filled,
-.iconcontainer .icon-content a[data-social="facebook"]~.tooltip {
+.iconcontainer .icon-content a[data-social="facebook"] ~ .tooltip {
   background-color: #0274b3;
 }
-
-  
-
 
 /* decoration elements css below. */
 
@@ -351,8 +338,6 @@ button:focus {
   transform: rotateX(-90deg) translateZ(100px);
 }
 
-
-
 @keyframes rotate {
   0% {
     transform: rotateX(0) rotateY(0) rotateZ(0);
@@ -362,7 +347,6 @@ button:focus {
     transform: rotateX(360deg) rotateY(360deg) rotateZ(360deg);
   }
 }
-
 
 .spinner1 {
   position: fixed;
@@ -425,7 +409,6 @@ button:focus {
     transform: rotate(45deg) rotateX(-385deg) rotateY(385deg);
   }
 }
-
 
 .spinner2 {
   position: fixed;
@@ -551,25 +534,21 @@ button:focus {
   }
 }
 
-
 /* MOBILE VIEW */
 
-
 @media screen and (max-width: 767px) {
-
-
   body {
     margin: 0;
     padding: 0;
-    overflow-x: hidden; 
+    overflow-x: hidden;
   }
 
   .bg-image {
-    background-size: cover; 
+    background-size: cover;
     background-position: center;
     position: relative;
-    width: 100vw; 
-    height: 100vh; 
+    width: 100vw;
+    height: 100vh;
   }
 
   .homelogo img {
@@ -578,7 +557,7 @@ button:focus {
 
   .sidenav {
     height: 100%;
-    width: 0; 
+    width: 0;
     position: fixed;
     z-index: 1;
     top: 0;
@@ -589,23 +568,23 @@ button:focus {
   }
 
   .sidenav.open {
-    width: 60%; 
+    width: 60%;
   }
 
   .sidenav h2 {
     font-family: "Mansalva";
     left: 5%;
-    font-size: 5vw; 
+    font-size: 5vw;
   }
 
   .sidenav a {
     color: rgb(0, 0, 0);
-    padding: 3vw; 
-    font-size: 6vw; 
+    padding: 3vw;
+    font-size: 6vw;
     font-family: "Helvetica";
     display: block;
     position: relative;
-    top: 40%; 
+    top: 40%;
   }
 
   .sidenav a:hover {
@@ -617,7 +596,7 @@ button:focus {
     position: absolute;
     top: 10%;
     display: block;
-    width: 70%; 
+    width: 70%;
     height: auto;
     left: 50%;
     transform: translateX(-50%);
@@ -627,7 +606,7 @@ button:focus {
   .openbtn {
     position: absolute;
     z-index: 1000;
-    font-size: 5vw; 
+    font-size: 5vw;
     cursor: pointer;
     background-color: #fa8500;
     color: rgb(0, 0, 0);
@@ -651,7 +630,7 @@ button:focus {
     width: 30vw;
     height: auto;
   }
-  
+
   .pinfo {
     font-family: "Mansalva";
     z-index: 1;
@@ -695,7 +674,7 @@ button:focus {
 
   .guidance a {
     color: inherit;
-    text-decoration: none; 
+    text-decoration: none;
   }
 
   button:hover,
@@ -735,23 +714,42 @@ button:focus {
     background: transparent;
     opacity: 0.9;
     border: 2px solid;
-    border-image: linear-gradient(to right, 117deg, #fa8500, rgb(253, 202, 136)) 1;
+    border-image: linear-gradient(to right, 117deg, #fa8500, rgb(253, 202, 136))
+      1;
     box-shadow: 0 0 100px rgba(255, 125, 4, 0.8);
   }
 
-  .front { transform: translateZ(5vw); }
-  .back { transform: rotateY(180deg) translateZ(5vw); }
-  .right { transform: rotateY(90deg) translateZ(5vw); }
-  .left { transform: rotateY(-90deg) translateZ(5vw); }
-  .top { transform: rotateX(90deg) translateZ(5vw); }
-  .bottom { transform: rotateX(-90deg) translateZ(5vw); }
-
-  @keyframes rotate {
-    0% { transform: rotateX(0) rotateY(0) rotateZ(0); }
-    100% { transform: rotateX(360deg) rotateY(360deg) rotateZ(360deg); }
+  .front {
+    transform: translateZ(5vw);
+  }
+  .back {
+    transform: rotateY(180deg) translateZ(5vw);
+  }
+  .right {
+    transform: rotateY(90deg) translateZ(5vw);
+  }
+  .left {
+    transform: rotateY(-90deg) translateZ(5vw);
+  }
+  .top {
+    transform: rotateX(90deg) translateZ(5vw);
+  }
+  .bottom {
+    transform: rotateX(-90deg) translateZ(5vw);
   }
 
-  .spinner1, .spinner2, .spinner3 {
+  @keyframes rotate {
+    0% {
+      transform: rotateX(0) rotateY(0) rotateZ(0);
+    }
+    100% {
+      transform: rotateX(360deg) rotateY(360deg) rotateZ(360deg);
+    }
+  }
+
+  .spinner1,
+  .spinner2,
+  .spinner3 {
     position: absolute;
     width: 5vw;
     height: 5vw;
@@ -760,61 +758,105 @@ button:focus {
     transform-style: preserve-3d;
   }
 
-  .spinner1 { top: 20%; right: 7%; animation: spinner1 1.6s infinite ease; }
-  .spinner2 { top: 65%; left: 11%; animation: spinner2 4s infinite linear; }
-  .spinner3 { top: 14%; left: 8%; animation: spinner3 15s infinite linear; }
+  .spinner1 {
+    top: 20%;
+    right: 7%;
+    animation: spinner1 1.6s infinite ease;
+  }
+  .spinner2 {
+    top: 65%;
+    left: 11%;
+    animation: spinner2 4s infinite linear;
+  }
+  .spinner3 {
+    top: 14%;
+    left: 8%;
+    animation: spinner3 15s infinite linear;
+  }
 
-  .spinner1 > div, .spinner2 > div, .spinner3 > div {
+  .spinner1 > div,
+  .spinner2 > div,
+  .spinner3 > div {
     background-color: var(--clr-alpha);
-    height: 100%;
+    height: 0%;
     position: absolute;
     width: 100%;
     border: 2px solid var(--clr);
   }
 
-  .spinner1 div:nth-of-type(1), .spinner2 div:nth-of-type(1), .spinner3 div:nth-of-type(1) {
+  .spinner1 div:nth-of-type(1),
+  .spinner2 div:nth-of-type(1),
+  .spinner3 div:nth-of-type(1) {
     transform: translateZ(-2.5vw) rotateY(180deg);
   }
 
-  .spinner1 div:nth-of-type(2), .spinner2 div:nth-of-type(2), .spinner3 div:nth-of-type(2) {
+  .spinner1 div:nth-of-type(2),
+  .spinner2 div:nth-of-type(2),
+  .spinner3 div:nth-of-type(2) {
     transform: rotateY(-270deg) translateX(50%);
     transform-origin: top right;
   }
 
-  .spinner1 div:nth-of-type(3), .spinner2 div:nth-of-type(3), .spinner3 div:nth-of-type(3) {
+  .spinner1 div:nth-of-type(3),
+  .spinner2 div:nth-of-type(3),
+  .spinner3 div:nth-of-type(3) {
     transform: rotateY(270deg) translateX(-50%);
     transform-origin: center left;
   }
 
-  .spinner1 div:nth-of-type(4), .spinner2 div:nth-of-type(4), .spinner3 div:nth-of-type(4) {
+  .spinner1 div:nth-of-type(4),
+  .spinner2 div:nth-of-type(4),
+  .spinner3 div:nth-of-type(4) {
     transform: rotateX(90deg) translateY(-50%);
     transform-origin: top center;
   }
 
-  .spinner1 div:nth-of-type(5), .spinner2 div:nth-of-type(5), .spinner3 div:nth-of-type(5) {
+  .spinner1 div:nth-of-type(5),
+  .spinner2 div:nth-of-type(5),
+  .spinner3 div:nth-of-type(5) {
     transform: rotateX(-90deg) translateY(50%);
     transform-origin: bottom center;
   }
 
-  .spinner1 div:nth-of-type(6), .spinner2 div:nth-of-type(6), .spinner3 div:nth-of-type(6) {
+  .spinner1 div:nth-of-type(6),
+  .spinner2 div:nth-of-type(6),
+  .spinner3 div:nth-of-type(6) {
     transform: translateZ(2.5vw);
   }
 
   @keyframes spinner1 {
-    0% { transform: rotate(45deg) rotateX(-25deg) rotateY(25deg); }
-    50% { transform: rotate(45deg) rotateX(-385deg) rotateY(25deg); }
-    100% { transform: rotate(45deg) rotateX(-385deg) rotateY(385deg); }
+    0% {
+      transform: rotate(45deg) rotateX(-25deg) rotateY(25deg);
+    }
+    50% {
+      transform: rotate(45deg) rotateX(-385deg) rotateY(25deg);
+    }
+    100% {
+      transform: rotate(45deg) rotateX(-385deg) rotateY(385deg);
+    }
   }
 
   @keyframes spinner2 {
-    0% { transform: rotate(45deg) rotateX(-25deg) rotateY(25deg); }
-    50% { transform: rotate(45deg) rotateX(-385deg) rotateY(25deg); }
-    100% { transform: rotate(45deg) rotateX(-385deg) rotateY(385deg); }
+    0% {
+      transform: rotate(45deg) rotateX(-25deg) rotateY(25deg);
+    }
+    50% {
+      transform: rotate(45deg) rotateX(-385deg) rotateY(25deg);
+    }
+    100% {
+      transform: rotate(45deg) rotateX(-385deg) rotateY(385deg);
+    }
   }
 
   @keyframes spinner3 {
-    0% { transform: rotate(45deg) rotateX(-25deg) rotateY(25deg); }
-    50% { transform: rotate(45deg) rotateX(-385deg) rotateY(25deg); }
-    100% { transform: rotate(45deg) rotateX(-385deg) rotateY(385deg); }
+    0% {
+      transform: rotate(45deg) rotateX(-25deg) rotateY(25deg);
+    }
+    50% {
+      transform: rotate(45deg) rotateX(-385deg) rotateY(25deg);
+    }
+    100% {
+      transform: rotate(45deg) rotateX(-385deg) rotateY(385deg);
+    }
   }
 }
