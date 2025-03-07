@@ -25,23 +25,24 @@ document.addEventListener("DOMContentLoaded", function () {
   document.getElementById("contact-form").addEventListener("submit", sendMail);
 });
 
-function toggleMenu() {
-  var sideMenu = document.getElementById("sidenav");
-  var menuButton = document.getElementById("menu");
-  var homelogo = document.getElementById("hmbtn");
+var flag = false;
 
-  if (sideMenu.style.width === "250px") {
-    menuButton.style.left = "10px";
-    sideMenu.style.width = "0";
-    homelogo.style.left = "110px";
-    menuButton.textContent = "Menu";
-  } else {
-    sideMenu.style.width = "250px";
-    menuButton.style.left = "260px";
-    homelogo.style.left = "360px";
-    menuButton.textContent = "Close";
+function toggleSphere() {
+  if (!flag) {
+  gsap.to(".miniSphere1", { duration: 0.5, top: "3%", left: "38%" });
+  gsap.to(".miniSphere2", { duration: 0.5, delay: 0.4, top: "32%", left: "41%" });
+  gsap.to(".miniSphere3", { duration: 0.5, delay: 0.6, top: "60%", left: "36%" });
+  flag = true;
+  }else if(flag) {
+    gsap.to(".miniSphere1", { duration: 0.5, top: "40%", left: "10%" });
+    gsap.to(".miniSphere2", { duration: 0.5, delay: 0.4, top: "40%", left: "10%" });
+    gsap.to(".miniSphere3", { duration: 0.5, delay: 0.6, top: "40%", left: "10%" });
+    flag = false;
   }
 }
 
-gsap.to(".logo img", { duration: 1.5, opacity: "1" });
-gsap.to(".iconcontainer", { duration: 1.5, left: "82%", ease: "bounce"});
+
+gsap.to(".iconcontainer", { duration: 1.5, left: "82%", ease: "bounce" });
+
+
+
