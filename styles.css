@@ -7,13 +7,81 @@ body {
 }
 
 body {
-  background-color: #ece0e0;
+  background-color: #000000;
+}
+
+
+.welcome {
+  background-color: transparent;
+  width: 20%;
+  position: absolute;
+  left: 40%;
+  top: 30%;
+}
+
+.welcome h3  {
+  background:  linear-gradient(160deg,
+  #a54e07,
+  #b47e11,
+  #fef1a2,
+  #bc881b,
+  #a54e07); 
+  -webkit-background-clip: text; 
+  -webkit-text-fill-color: transparent; 
+  font-size: 30px; 
+  font-weight: bold
+}
+
+.welcome p  {
+  background:  linear-gradient(160deg,
+  #a54e07,
+  #b47e11,
+  #fef1a2,
+  #bc881b,
+  #a54e07); 
+  -webkit-background-clip: text; 
+  -webkit-text-fill-color: transparent; 
+  font-size: 30px; 
+  font-weight: bold
+}
+
+
+.deco img{
+  position: absolute;
+  width: 40%;
+  height: 30%;
+  top: 80%;
+  left: 30%;
+
+}
+.selfImage{
+  width: 160px;
+  height: 160px;
+  position: absolute;
+  left: 70%;
+  top: 30%;
+  background:  linear-gradient(160deg,
+  #a54e07,
+  #b47e11,
+  #fef1a2,
+  #bc881b,
+  #a54e07); 
+}
+
+
+.selfImage img {
+  position: relative;
+  width: 95%;
+  height: 95%;
+  top: 3%;
+  left: 2.5%;
+
 }
 
 .toggleButton {
   position: absolute;
-  top: 30%;
-  left: 50%;
+  top: 60%;
+  left: 70%;
   z-index: 2;
   touch-action: manipulation;
   display: inline-block;
@@ -64,7 +132,7 @@ body {
 .container {
   width: 100%;
   height: 900px;
-  top: 100px;
+  top: -600px;
   margin: 0;
   padding: 0;
   position: relative;
@@ -73,8 +141,8 @@ body {
 
 .mainSphere {
   position: absolute;
-  width: 40%;
-  height: 80%;
+  width: 30%;
+  height: 60%;
   z-index: 1;
   background-image: linear-gradient(160deg,
       #a54e07,
@@ -102,7 +170,7 @@ body {
 
 .miniSphere1 {
   position: absolute;
-  top: 40%;
+  top: 30%;
   left: 10%;
   width: 200px;
   height: 200px;
@@ -124,7 +192,7 @@ body {
 
 .miniSphere2 {
   position: absolute;
-  top: 40%;
+  top: 30%;
   left: 10%;
   width: 200px;
   height: 200px;
@@ -146,7 +214,7 @@ body {
 
 .miniSphere3 {
   position: absolute;
-  top: 40%;
+  top: 20%;
   left: 10%;
   width: 200px;
   height: 200px;
@@ -165,6 +233,25 @@ body {
   border-radius: 50%;
 
 }
+
+.miniSphere1 img {
+  position: absolute;
+  top: 20%;
+  left: 23%;
+}
+
+.miniSphere2 img {
+  position: absolute;
+  top: 20%;
+  left: 23%;
+}
+
+.miniSphere3 img {
+  position: absolute;
+  top: 20%;
+  left: 23%;
+}
+
 
 .homelogo img {
   padding: 5px;
