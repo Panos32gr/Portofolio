@@ -28,8 +28,44 @@ document.addEventListener("DOMContentLoaded", function () {
 var flag = false;
 
 
+function mini1(){
+  
+  gsap.to(".vid1",{duration: 0.5, opacity: 0});
+  gsap.to(".credentials",{duration: 0.5, opacity: 0});
+  gsap.to(".pointer", {duration: 0.5, opacity: 0});
+  gsap.to(".contact", {duration: 0.5, opacity: 0});
+  gsap.to (".aboutme",{duration: 0.5, delay: 0.7, opacity: 1});
+  
+}
 
 
+
+function mini2(){
+  gsap.to(".vid1",{duration: 0.5, opacity: 0});
+  gsap.to(".aboutme",{duration: 0.5, opacity: 0});
+  gsap.to(".pointer", {duration: 0.5,opacity: 0});
+  gsap.to(".contact", {duration: 0.5, opacity: 0});
+  gsap.to (".credentials",{duration: 0.5, delay: 0.7, opacity: 1});
+ 
+}
+
+function mini3(){
+  gsap.to(".vid1",{duration: 0.5, opacity: 0});
+  gsap.to (".credentials",{duration: 0.5, opacity: 0});
+  gsap.to(".aboutme",{duration: 0.5, opacity: 0});
+  gsap.to(".contact", {duration: 0.5, delay: 0.7, opacity: 1});
+  gsap.to(".pointer", {duration: 0.5, delay: 0.7, opacity: 1});
+}
+
+function withdraw() {
+  gsap.to (".aboutme",{opacity: 0});
+  gsap.to (".credentials",{opacity: 0});
+  gsap.to(".pointer", {duration: 0.5,opacity: 0});
+  gsap.to(".contact", {duration: 0.5, opacity: 0});
+  gsap.to(".vid1",{opacity: 1});
+  gsap.to(".container",{ duration: 1, delay: 0.7, top: "-800px"});
+
+}
 
 function toggleSphere() {
   if (!flag) {
@@ -60,7 +96,8 @@ function toggleSphere() {
       top: "30%",
       left: "10%",
     });
-    gsap.to(".container",{ duration: 1, delay: 0.7, top: "-800px"});
+  
+    withdraw();
     flag = false;
   }
 }
