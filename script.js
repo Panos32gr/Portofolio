@@ -66,7 +66,7 @@ function toggleSphere() {
   if (!flag) {
     gsap.to(".logo", {duration: 1, opacity: 0});
     gsap.to(".welcome", {duration: 1, opacity: 0});
-    gsap.to(".container", { duration: 1, top: "200px", ease: "bounce" });
+    gsap.to(".container", { duration: 1, top: "200px", ease: "power1.out" });
     gsap.to(".miniSphere1", {
       duration: 0.5,
       delay: 1.2,
@@ -103,5 +103,8 @@ function toggleSphere() {
     flag = false;
   }
 }
+
+
+
 
 gsap.to(".iconcontainer", { duration: 1.5, left: "82%", ease: "bounce" });
