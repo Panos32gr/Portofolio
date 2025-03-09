@@ -61,6 +61,19 @@ body {
   font-weight: bold
 }
 
+.logo {
+  position: absolute;
+  width: 250px;
+  height: 200px;
+  top: 30%;
+  left: 20%;
+}
+
+.logo img {
+  opacity: 1;
+  width: 100%;
+  height: 100%;
+}
 
 .deco img{
   position: absolute;
@@ -238,6 +251,7 @@ body {
   left: 10%;
   width: 200px;
   height: 200px;
+  cursor: pointer;
   background-image: linear-gradient(160deg,
       #a54e07,
       #b47e11,
@@ -260,6 +274,7 @@ body {
   left: 10%;
   width: 200px;
   height: 200px;
+  cursor: pointer;
   background-image: linear-gradient(160deg,
       #a54e07,
       #b47e11,
@@ -282,6 +297,7 @@ body {
   left: 10%;
   width: 200px;
   height: 200px;
+  cursor: pointer;
   background-image: linear-gradient(160deg,
       #a54e07,
       #b47e11,
