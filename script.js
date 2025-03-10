@@ -105,6 +105,45 @@ function toggleSphere() {
 }
 
 
+function toggleNav1(){
+  if(document.getElementById('navSphere1').style.top === '-200%') {
+  gsap.to('.navSphere1', {duration: 1, top: '10%'});
+  gsap.to('.navSphere2', {duration: 1, top: '-200%'});
+  gsap.to('.navSphere3', {duration: 1, top: '-200%'});
+  gsap.to('.fnc1', {rotation: 180});
+  }else{
+    gsap.to('.navSphere1', {duration: 1, top: '-200%'});
+    gsap.to('.fnc1', {rotation: 0});
+  }
+
+}
+
+
+function toggleNav2(){
+  if(document.getElementById('navSphere2').style.top === '-200%') {
+    gsap.to('.navSphere1', {duration: 1, top: '-200%'});
+    gsap.to('.navSphere2', {duration: 1, top: '10%'});
+    gsap.to('.navSphere3', {duration: 1, top: '-200%'});
+    gsap.to('.fnc2', {rotation: 180});
+    }else{
+      gsap.to('.navSphere2', {duration: 1, top: '-200%'});
+      gsap.to('.fnc2', {rotation: 0});
+    }
+}
+
+
+function toggleNav3(){
+  if(document.getElementById('navSphere3').style.top === '-200%') {
+    gsap.to('.navSphere1', {duration: 1, top: '-200%'});
+    gsap.to('.navSphere2', {duration: 1, top: '-200%'});
+    gsap.to('.navSphere3', {duration: 1, top: '10%'});
+    gsap.to('.fnc3', {rotation: 180});
+    }else{
+      gsap.to('.navSphere3', {duration: 1, top: '-200%'});
+      gsap.to('.fnc3', {rotation: 0});
+    }
+}
+
 
 
 gsap.to(".iconcontainer", { duration: 1.5, left: "82%", ease: "bounce" });

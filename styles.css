@@ -12,7 +12,6 @@ body {
 }
 
 
-
 .backround::before,
 .backround::after {
   content: "";
@@ -35,8 +34,8 @@ body {
   z-index: 0;
 }
 
-
 .topnav {
+  z-index: 1;
   position: absolute;
   top: 0;
   width: 100%;
@@ -47,12 +46,11 @@ body {
 .navSphere1,.navSphere2,.navSphere3{
   position: relative;
   display: inline-block;
-  top: -0%;
+  top: -200%;
   margin: 20px;
   left: 30%;
   width: 200px;
   height: 200px;
-  cursor: pointer;
   background-image: linear-gradient(160deg,
       #a54e07,
       #b47e11,
@@ -68,22 +66,39 @@ body {
   border-radius: 50%;
 }
 
-.navSphere1 img,.navSphere2 img,.navSphere3 img {
+
+.fnc1,.fnc2,.fnc3 {
+  background-image: url(images/arrowbottom.png);
+  background-size: 100%;
+  background-color: transparent;
+  background-repeat: no-repeat;
   position: absolute;
-  width: 20%;
-  height: 20%;
-  left: 37%;
-  bottom: 5%;
+  cursor: pointer;
+  width: 15%;
+  height: 15%;
+  left: 40%;
+  bottom: 0;
+  border: none;
+  outline: none;
 }
 
-.navSphere1 h2,.navSphere2 h2,.navSphere3 h2 {
+.navSphere1 a{
   position: inherit;
   color: #000;
-  left: 20%;
-  top: 24%;
+  left: 25%;
+  top: 40%;
+  text-decoration: none;
+  font-size: 25px;
+ }
 
+.personalinfoshrt,.reachout {
+  position: inherit;
+  color: #000;
+  left: 30%;
+  top: 40%;
+  border: none;
+  outline: none;
 } 
-
 
 .welcome {
   background-color: transparent;
@@ -311,7 +326,7 @@ body {
   color: #000;
 }
 
-.miniSphere1 {
+.miniSphere1,.miniSphere2,.miniSphere3{
   position: absolute;
   top: 30%;
   left: 10%;
@@ -331,73 +346,13 @@ body {
     inset 0 -2px 5px 1px rgba(139, 66, 8, 1),
     inset 0 -1px 1px 3px rgba(250, 227, 133, 1);
   border-radius: 50%;
-
 }
 
-.miniSphere2 {
-  position: absolute;
-  top: 30%;
-  left: 10%;
-  width: 200px;
-  height: 200px;
-  cursor: pointer;
-  background-image: linear-gradient(160deg,
-      #a54e07,
-      #b47e11,
-      #fef1a2,
-      #bc881b,
-      #a54e07);
-  border: 1px solid #a55d07;
-  color: rgb(120, 50, 5);
-  text-shadow: 0 2px 2px rgba(250, 227, 133, 1);
-  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(110, 80, 20, 0.4),
-    inset 0 -2px 5px 1px rgba(139, 66, 8, 1),
-    inset 0 -1px 1px 3px rgba(250, 227, 133, 1);
-  border-radius: 50%;
-
-}
-
-.miniSphere3 {
-  position: absolute;
-  top: 20%;
-  left: 10%;
-  width: 200px;
-  height: 200px;
-  cursor: pointer;
-  background-image: linear-gradient(160deg,
-      #a54e07,
-      #b47e11,
-      #fef1a2,
-      #bc881b,
-      #a54e07);
-  border: 1px solid #a55d07;
-  color: rgb(120, 50, 5);
-  text-shadow: 0 2px 2px rgba(250, 227, 133, 1);
-  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(110, 80, 20, 0.4),
-    inset 0 -2px 5px 1px rgba(139, 66, 8, 1),
-    inset 0 -1px 1px 3px rgba(250, 227, 133, 1);
-  border-radius: 50%;
-
-}
-
-.miniSphere1 img {
+.miniSphere1 img,.miniSphere2 img,.miniSphere3 img  {
   position: absolute;
   top: 20%;
   left: 23%;
 }
-
-.miniSphere2 img {
-  position: absolute;
-  top: 20%;
-  left: 23%;
-}
-
-.miniSphere3 img {
-  position: absolute;
-  top: 20%;
-  left: 23%;
-}
-
 
 .homelogo img {
   padding: 5px;
@@ -529,27 +484,487 @@ ul {
   body {
     margin: 0;
     padding: 0;
+    overflow: hidden;
+  }
+
+
+
+  html,
+  body {
+    overflow-y: hidden;
     overflow-x: hidden;
+    white-space: nowrap;
+    margin: 0;
   }
-
-
-
-  .homelogo img {
-    display: none;
+  
+  body {
+    background-color: #000000;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   }
-
-  .util {
-    list-style: none;
+  
+  
+  .backround::before,
+  .backround::after {
+    content: "";
     position: absolute;
-    display: flex;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: 
+      repeating-linear-gradient(
+      45deg,   
+      #a54e07,
+      #b47e11,
+      #fef1a2,
+      #bc881b,
+      #a54e07,
+        transparent 150px,
+        transparent 1050px
+      );
+    z-index: 0;
+  }
+  
+  .topnav {
     z-index: 1;
-    top: 50%;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 60px;
+    background:  transparent;
+  }
+  
+  .navSphere1,.navSphere2,.navSphere3{
+    position: relative;
+    display: inline-block;
+    left: 10%;
+    width: 150px;
+    height: 150px;
+    background-image: linear-gradient(160deg,
+        #a54e07,
+        #b47e11,
+        #fef1a2,
+        #bc881b,
+        #a54e07);
+    border: 1px solid #a55d07;
+    color: rgb(120, 50, 5);
+    text-shadow: 0 2px 2px rgba(250, 227, 133, 1);
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(110, 80, 20, 0.4),
+      inset 0 -2px 5px 1px rgba(139, 66, 8, 1),
+      inset 0 -1px 1px 3px rgba(250, 227, 133, 1);
+    border-radius: 50%;
+  }
+  
+  
+  .fnc1,.fnc2,.fnc3 {
+    background-image: url(images/arrowbottom.png);
+    background-size: 100%;
+    background-color: transparent;
+    background-repeat: no-repeat;
+    position: absolute;
+    cursor: pointer;
+    width: 15%;
+    height: 15%;
+    left: 40%;
+    bottom: 0;
+    border: none;
+    outline: none;
+  }
+  
+  .navSphere1 a{
+    position: inherit;
+    color: #000;
+    left: 22%;
+    top: 40%;
+    text-decoration: none;
+    font-size: 20px;
+   }
+  
+  .personalinfoshrt,.reachout {
+    position: inherit;
+    color: #000;
+    left: 30%;
+    top: 40%;
+    border: none;
+    outline: none;
+  } 
+  
+  .welcome {
+    background-color: transparent;
+    width: 40%;
+    position: absolute;
+    left: 25%;
+    top: 30%;
+  }
+  
+  .pointer {
+    top: 70%;
+    left: 85%;
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    opacity: 0;
+  }
+  
+  .pointer img {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+  }
+  
+  .welcome h3  {
+    background:  linear-gradient(160deg,
+    #a54e07,
+    #b47e11,
+    #fef1a2,
+    #bc881b,
+    #a54e07); 
+    -webkit-background-clip: text; 
+    -webkit-text-fill-color: transparent; 
+    font-size: 20px; 
+    font-weight: bold
+  }
+  
+  .welcome p  {
+    background:  linear-gradient(160deg,
+    #a54e07,
+    #b47e11,
+    #fef1a2,
+    #bc881b,
+    #a54e07); 
+    -webkit-background-clip: text; 
+    -webkit-text-fill-color: transparent; 
+    font-size: 20px; 
+    font-weight: bold
+  }
+  
+  .logo {
+    position: absolute;
+    width: 100px;
+    height: 75px;
+    top: 32%;
+    left: 8%;
+  }
+  
+  .logo img {
+    opacity: 1;
+    width: 100%;
+    height: 100%;
+  }
+  
+  
+  .selfImage{
+    width: 160px;
+    height: 160px;
+    position: absolute;
+    left: 75%;
+    top: 30%;
+    background:  linear-gradient(160deg,
+    #a54e07,
+    #b47e11,
+    #fef1a2,
+    #bc881b,
+    #a54e07); 
+  }
+  
+  
+  .selfImage img {
+    position: relative;
+    width: 95%;
+    height: 95%;
+    top: 3%;
+    left: 2.5%;
+  
+  }
+  
+  .toggleButton {
+    position: absolute;
+    top: 60%;
+    left: 80%;
+    z-index: 2;
+    touch-action: manipulation;
+    display: inline-block;
+    outline: none;
+    font-family: inherit;
+    font-size: 1em;
+    box-sizing: border-box;
+    border: none;
+    border-radius: 0.3em;
+    height: 2.75em;
+    line-height: 2.5em;
+    text-transform: uppercase;
+    padding: 0 1em;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(110, 80, 20, 0.4),
+      inset 0 -2px 5px 1px rgba(139, 66, 8, 1),
+      inset 0 -1px 1px 3px rgba(250, 227, 133, 1);
+    background-image: linear-gradient(160deg,
+        #a54e07,
+        #b47e11,
+        #fef1a2,
+        #bc881b,
+        #a54e07);
+    border: 1px solid #a55d07;
+    color: rgb(120, 50, 5);
+    text-shadow: 0 2px 2px rgba(250, 227, 133, 1);
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+    background-size: 100% 100%;
+    background-position: center;
+  }
+  
+  .toggleButton:focus,
+  .toggleButton:hover {
+    background-size: 150% 150%;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23),
+      inset 0 -2px 5px 1px #b17d10, inset 0 -1px 1px 3px rgba(250, 227, 133, 1);
+    border: 1px solid rgba(165, 93, 7, 0.6);
+    color: rgba(120, 50, 5, 0.8);
+  }
+  
+  .toggleButton:active {
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(110, 80, 20, 0.4),
+      inset 0 -2px 5px 1px #b17d10, inset 0 -1px 1px 3px rgba(250, 227, 133, 1);
+  }
+  
+  
+  
+  .container {
+    width: 100%;
+    height: 900px;
+    top: -600px;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    background-color: transparent;
+  }
+  
+  .mainSphere {
+    position: absolute;
+    width: 50%;
+    height: 50%;
+    z-index: 1;
+    background-image: linear-gradient(160deg,
+        #a54e07,
+        #b47e11,
+        #fef1a2,
+        #bc881b,
+        #a54e07);
+    border: 1px solid #a55d07;
+    color: rgb(120, 50, 5);
+    text-shadow: 0 2px 2px rgba(250, 227, 133, 1);
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(110, 80, 20, 0.4),
+      inset 0 -2px 5px 1px rgba(139, 66, 8, 1),
+      inset 0 -1px 1px 3px rgba(250, 227, 133, 1);
+    border-radius: 50%
+  }
+  
+  .vid1 {
+    position: absolute;
+    width: 70%;
+    border-radius: 5%;
+    top: 32%;
+    left: 15%;
+    opacity: 1;
+  
+  }
+  
+  .credentials {
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    top: 25%;
+    left: 10%;
+    opacity: 0;
+  }
+  
+  .credentials img {
+    width: 50%;
+    height: 50%;
+  }
+  
+  .credentials h3 {
+    font-size: 20px;
+    color: #000;
+  }
+  
+  .aboutme {
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    top: 30%;
+    left: 10%;
+    opacity: 0;
+  }
+  
+  .aboutme h3 {
+    font-size: 25px;
+    color: #000;
+  }
+  
+  .contact {
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    top: 30%;
+    left: 20%;
+    opacity: 0;
+  }
+  
+  .contact h3 {
+    font-size: 30px;
+    color: #000;
+  }
+  
+  .miniSphere1,.miniSphere2,.miniSphere3{
+    position: absolute;
+    top: 30%;
+    left: 10%;
+    width: 150px;
+    height: 150px;
+    cursor: pointer;
+    background-image: linear-gradient(160deg,
+        #a54e07,
+        #b47e11,
+        #fef1a2,
+        #bc881b,
+        #a54e07);
+    border: 1px solid #a55d07;
+    color: rgb(120, 50, 5);
+    text-shadow: 0 2px 2px rgba(250, 227, 133, 1);
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(110, 80, 20, 0.4),
+      inset 0 -2px 5px 1px rgba(139, 66, 8, 1),
+      inset 0 -1px 1px 3px rgba(250, 227, 133, 1);
+    border-radius: 50%;
+  }
+  
+  .miniSphere1 img,.miniSphere2 img,.miniSphere3 img  {
+    position: absolute;
+    width: 50%;
+    top: 20%;
+    left: 23%;
+  }
+  
+  .homelogo img {
+    padding: 5px;
+    width: 60px;
+    height: 50px;
+    position: absolute;
+    left: 10px;
+    transition: 0.5s;
+  }
+  
+  
+  ul {
+    list-style: none;
+  }
+  
+  .iconcontainer {
+    display: flex;
+    position: fixed;
+    bottom: 0;
+    left: -20%;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+  }
+  
+  .iconcontainer .icon-content {
+    margin: 0 10px;
+    position: relative;
+  }
+  
+  .iconcontainer .icon-content .tooltip {
+    position: absolute;
+    top: -30px;
     left: 50%;
     transform: translateX(-50%);
-    color: #000;
-    font-style: normal;
-    flex-wrap: wrap;
-    justify-content: center;
+    color: #fff;
+    padding: 6px 10px;
+    border-radius: 5px;
+    opacity: 0;
+    visibility: hidden;
+    font-size: 14px;
+    transition: all 0.3s ease;
   }
-
+  
+  .iconcontainer .icon-content:hover .tooltip {
+    opacity: 1;
+    visibility: visible;
+    top: -50px;
+  }
+  
+  .iconcontainer .icon-content a {
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    color: #4d4d4d;
+    background:linear-gradient(160deg,
+    #a54e07,
+    #b47e11,
+    #fef1a2,
+    #bc881b,
+    #a54e07);
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .iconcontainer .icon-content a:hover {
+    box-shadow: 3px 2px 45px 0px rgb(0 0 0 / 12%);
+  }
+  
+  .iconcontainer .icon-content a svg {
+    position: relative;
+    z-index: 1;
+    width: 30px;
+    height: 30px;
+  }
+  
+  .iconcontainer .icon-content a:hover {
+    color: white;
+  }
+  
+  .iconcontainer .icon-content a .filled {
+    position: absolute;
+    top: auto;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 0;
+    background-color: #000;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .iconcontainer .icon-content a:hover .filled {
+    height: 100%;
+  }
+  
+  .iconcontainer .icon-content a[data-social="linkedin"] .filled,
+  .iconcontainer .icon-content a[data-social="linkedin"]~.tooltip {
+    background-color: #0274b3;
+  }
+  
+  .iconcontainer .icon-content a[data-social="github"] .filled,
+  .iconcontainer .icon-content a[data-social="github"]~.tooltip {
+    background-color: #24262a;
+  }
+  
+  .iconcontainer .icon-content a[data-social="instagram"] .filled,
+  .iconcontainer .icon-content a[data-social="instagram"]~.tooltip {
+    background: linear-gradient(45deg,
+        #405de6,
+        #5b51db,
+        #b33ab4,
+        #c135b4,
+        #e1306c,
+        #fd1f1f);
+  }
+  
+  .iconcontainer .icon-content a[data-social="facebook"] .filled,
+  .iconcontainer .icon-content a[data-social="facebook"]~.tooltip {
+    background-color: #0274b3;
+  }
 }
