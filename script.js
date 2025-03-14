@@ -1,31 +1,3 @@
-document.addEventListener("DOMContentLoaded", function () {
-  emailjs.init("zBAkN7Fmv44dFqA_O");
-
-  function sendMail(event) {
-    event.preventDefault();
-
-    var params = {
-      name: document.getElementById("name").value,
-      email: document.getElementById("email").value,
-      message: document.getElementById("message").value,
-    };
-
-    emailjs.send("service_z4phvkq", "template_87hzluf", params).then(
-      function (response) {
-        console.log("SUCCESS!", response.status, response.text);
-        alert("Email has been sent successfully.");
-      },
-      function (error) {
-        console.log("FAILED...", error);
-        alert("Email sending failed.");
-      }
-    );
-  }
-
-  document.getElementById("contact-form").addEventListener("submit", sendMail);
-});
-
-
 
 function mini1() {
   gsap.to(".vid1", { duration: 0.5, opacity: 0 });
@@ -165,6 +137,8 @@ function toggleNav1() {
     gsap.to(".navSphere2", { duration: 1, top: "-200%" });
     gsap.to(".navSphere3", { duration: 1, top: "-200%" });
     gsap.to(".fnc1", { rotation: 180 });
+    gsap.to(".fnc2", { rotation: 0 });
+    gsap.to(".fnc3", { rotation: 0 });
   } else {
     gsap.to(".navSphere1", { duration: 1, top: "-200%" });
     gsap.to(".fnc1", { rotation: 0 });
@@ -177,6 +151,8 @@ function toggleNav2() {
     gsap.to(".navSphere2", { duration: 1, top: "10%" });
     gsap.to(".navSphere3", { duration: 1, top: "-200%" });
     gsap.to(".fnc2", { rotation: 180 });
+    gsap.to(".fnc1", { rotation: 0 });
+    gsap.to(".fnc3", { rotation: 0 });
   } else {
     gsap.to(".navSphere2", { duration: 1, top: "-200%" });
     gsap.to(".fnc2", { rotation: 0 });
@@ -189,6 +165,8 @@ function toggleNav3() {
     gsap.to(".navSphere2", { duration: 1, top: "-200%" });
     gsap.to(".navSphere3", { duration: 1, top: "10%" });
     gsap.to(".fnc3", { rotation: 180 });
+    gsap.to(".fnc1", { rotation: 0 });
+    gsap.to(".fnc2", { rotation: 0 });
   } else {
     gsap.to(".navSphere3", { duration: 1, top: "-200%" });
     gsap.to(".fnc3", { rotation: 0 });
