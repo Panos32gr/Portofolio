@@ -51,13 +51,13 @@ function toggleSphere() {
         duration: 0.5,
         delay: 1.2,
         top: "3%",
-        left: "53%",
+        left: "58%",
       });
       gsap.to(".miniSphere2", {
         duration: 0.5,
         delay: 1.3,
         top: "20%",
-        left: "48%",
+        left: "53%",
       });
       gsap.to(".miniSphere3", {
         duration: 0.5,

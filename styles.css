@@ -1172,7 +1172,7 @@ ul {
   .toggleButton {
     position: absolute;
     top: 60%;
-    left: 70%;
+    left: 75%;
     z-index: 2;
     touch-action: manipulation;
     display: inline-block;
@@ -1232,7 +1232,7 @@ ul {
   
   .mainSphere {
     position: absolute;
-    width: 45%;
+    width: 55%;
     height: 28%;
     z-index: 1;
     background-image: linear-gradient(160deg,
@@ -1254,7 +1254,7 @@ ul {
     position: absolute;
     width: 85%;
     border-radius: 5%;
-    top: 32%;
+    top: 30%;
     left: 7%;
     opacity: 1;
   
