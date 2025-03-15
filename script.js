@@ -88,7 +88,47 @@ function toggleSphere() {
       withdraw();
       flag = false;
     }
-} else {
+} else if (windowWidth <= 630) {
+    if (!flag) {
+      gsap.to(".logo", { duration: 1, opacity: 0 });
+      gsap.to(".welcome", { duration: 1, opacity: 0 });
+      gsap.to(".container", { duration: 1, top: "200px", ease: "power1.out" });
+      gsap.to(".miniSphere1", {
+        duration: 0.5,
+        delay: 1.2,
+        top: "3%",
+        left: "30%",
+      });
+      gsap.to(".miniSphere2", {
+        duration: 0.5,
+        delay: 1.3,
+        top: "20%",
+        left: "33%"
+      });
+      gsap.to(".miniSphere3", {
+        duration: 0.5,
+        delay: 1.4,
+        top: "53%",
+        left: "24%"
+      });
+      flag = true;
+    } else if (flag) {
+      gsap.to(".miniSphere1", { duration: 0.5, top: "30%", left: "10%" });
+      gsap.to(".miniSphere2", {
+        duration: 0.5,
+        top: "30%",
+        left: "10%"
+      });
+      gsap.to(".miniSphere3", {
+        duration: 0.5,
+        top: "30%",
+        left: "10%"
+      });
+
+      withdraw();
+      flag = false;
+    }
+  } else {
     if (!flag) {
       gsap.to(".logo", { duration: 1, opacity: 0 });
       gsap.to(".welcome", { duration: 1, opacity: 0 });
@@ -178,3 +218,10 @@ gsap.to(".iconcontainer", { duration: 1.5, left: "55%", ease: "bounce" });
 }else{
   gsap.to(".iconcontainer", { duration: 1.5, left: "82%", ease: "bounce" });
 }
+
+if (window.innerWidth <= 630) {
+  gsap.to(".iconcontainer", { duration: 1.5, left: "32%", ease: "bounce" });
+  }else{
+    gsap.to(".iconcontainer", { duration: 1.5, left: "82%", ease: "bounce" });
+  }
+  
