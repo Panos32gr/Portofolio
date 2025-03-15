@@ -174,7 +174,7 @@ function toggleNav3() {
 }
 
 if (window.innerWidth <= 800) {
-gsap.to(".iconcontainer", { duration: 1.5, left: "42%", ease: "bounce" });
+gsap.to(".iconcontainer", { duration: 1.5, left: "55%", ease: "bounce" });
 }else{
   gsap.to(".iconcontainer", { duration: 1.5, left: "82%", ease: "bounce" });
 }
