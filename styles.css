@@ -1172,7 +1172,7 @@ ul {
   .toggleButton {
     position: absolute;
     top: 60%;
-    left: 80%;
+    left: 70%;
     z-index: 2;
     touch-action: manipulation;
     display: inline-block;
@@ -1271,7 +1271,7 @@ ul {
   }
   
   .aboutme h3 {
-    font-size: 15px;
+    font-size: 10px;
     color: #000;
   }
 
@@ -1285,12 +1285,12 @@ ul {
   }
   
   .credentials img {
-    width: 25%;
-    height: 25%;
+    width: 15%;
+    height: 15%;
   }
   
   .credentials h3 {
-    font-size: 13.5px;
+    font-size: 10px;
     color: #000;
   }
   
@@ -1306,12 +1306,12 @@ ul {
   }
   
   .contact h3 {
-    font-size: 20px;
+    font-size: 12px;
     color: #000;
   }
 
   .pointer {
-    top: 65%;
+    top: 80%;
     left: 60%;
     width: 200px;
     height: 200px;
