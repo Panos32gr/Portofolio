@@ -143,6 +143,56 @@
   });
 
   // ——————————————————————————————————————
+  // CONTACT FORM — submit via Formspree
+  // ——————————————————————————————————————
+  const contactForm = document.getElementById("contactForm");
+  const submitBtn = document.getElementById("submitBtn");
+  const formStatus = document.getElementById("formStatus");
+
+  if (contactForm) {
+    contactForm.addEventListener("submit", async function (e) {
+      e.preventDefault();
+
+      const submitText = submitBtn.querySelector(".contact-form__submit-text");
+      const submitLoading = submitBtn.querySelector(
+        ".contact-form__submit-loading",
+      );
+
+      // Show loading state
+      submitBtn.disabled = true;
+      submitText.hidden = true;
+      submitLoading.hidden = false;
+      formStatus.textContent = "";
+      formStatus.className = "contact-form__status";
+
+      try {
+        const response = await fetch(contactForm.action, {
+          method: "POST",
+          body: new FormData(contactForm),
+          headers: { Accept: "application/json" },
+        });
+
+        if (response.ok) {
+          formStatus.textContent =
+            "Message sent successfully! I'll get back to you soon.";
+          formStatus.classList.add("contact-form__status--success");
+          contactForm.reset();
+        } else {
+          throw new Error("Form submission failed");
+        }
+      } catch (error) {
+        formStatus.textContent =
+          "Oops! Something went wrong. Please try again or email me directly.";
+        formStatus.classList.add("contact-form__status--error");
+      } finally {
+        submitBtn.disabled = false;
+        submitText.hidden = false;
+        submitLoading.hidden = true;
+      }
+    });
+  }
+
+  // ——————————————————————————————————————
   // ACTIVE NAV LINK highlighting
   // ——————————————————————————————————————
   const sections = document.querySelectorAll("section[id]");

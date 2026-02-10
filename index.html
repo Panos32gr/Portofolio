@@ -338,12 +338,86 @@
       <div class="contact__content">
         <p class="contact__text">
           I'm currently looking for new opportunities and my inbox is always
-          open. Whether you have a question or just want to say hi, feel free to
-          reach out and I'll get back to you as soon as possible!
+          open. Whether you have a question or just want to say hi, fill out the
+          form below and I'll get back to you as soon as possible!
         </p>
-        <a href="mailto:panos18900@gmail.com" class="btn btn--primary btn--lg"
-          >Say Hello</a
+        <form
+          class="contact-form"
+          id="contactForm"
+          action="https://formspree.io/f/YOUR_FORM_ID"
+          method="POST"
         >
+          <div class="contact-form__group">
+            <label for="name" class="contact-form__label">Name</label>
+            <input
+              type="text"
+              id="name"
+              name="name"
+              class="contact-form__input"
+              placeholder="Your name"
+              required
+            />
+          </div>
+          <div class="contact-form__group">
+            <label for="email" class="contact-form__label">Email</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              class="contact-form__input"
+              placeholder="your@email.com"
+              required
+            />
+          </div>
+          <div class="contact-form__group">
+            <label for="subject" class="contact-form__label">Subject</label>
+            <input
+              type="text"
+              id="subject"
+              name="subject"
+              class="contact-form__input"
+              placeholder="What is this about?"
+            />
+          </div>
+          <div class="contact-form__group">
+            <label for="message" class="contact-form__label">Message</label>
+            <textarea
+              id="message"
+              name="message"
+              class="contact-form__input contact-form__textarea"
+              placeholder="Your message..."
+              rows="6"
+              required
+            ></textarea>
+          </div>
+          <button
+            type="submit"
+            class="btn btn--primary btn--lg contact-form__submit"
+            id="submitBtn"
+          >
+            <span class="contact-form__submit-text">Send Message</span>
+            <span class="contact-form__submit-loading" hidden>
+              <svg
+                class="spinner"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <circle
+                  cx="12"
+                  cy="12"
+                  r="10"
+                  stroke="currentColor"
+                  stroke-width="3"
+                  fill="none"
+                  stroke-dasharray="31.4"
+                  stroke-dashoffset="10"
+                />
+              </svg>
+              Sending...
+            </span>
+          </button>
+          <p class="contact-form__status" id="formStatus"></p>
+        </form>
       </div>
     </section>
 
